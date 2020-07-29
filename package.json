@@ -6,6 +6,14 @@
   "contributors": [
     "Denis Prohorenko <den.prohorenko@gmail.com> (https://github.com/dprohorenko)"
   ],
+  "scripts": {
+    "_depcheck": "depcheck",
+    "_lint-format": "prettier --write {*,**/*}.{ts,tsx,js,jsx,mjs,cjs,json,md}",
+    "_lint-js": "eslint --fix --rule \"{'no-console':2}\" --ext .ts,.tsx,.js,.jsx,.mjs,.cjs .",
+    "_lint-types": "tsc --pretty --noEmit",
+    "_type-coverage": "type-coverage --ignore-catch --detail --update",
+    "_upgrade": "ncu -u"
+  },
   "resolutions": {
     "chokidar": "3.4.1",
     "webpack": "5.0.0-beta.22"
@@ -18,7 +26,7 @@
     "sanitize.css": "11.0.1"
   },
   "devDependencies": {
-    "@types/node": "14.0.26",
+    "@types/node": "14.0.27",
     "@types/react": "16.9.43",
     "pages": "link:./pages",
     "src": "link:./src",
@@ -28,7 +36,10 @@
     "querystring": "^0.2.0"
   },
   "engines": {
-    "node": ">=14.4.0",
+    "node": "12.x",
     "yarn": ">=1.22.4"
+  },
+  "typeCoverage": {
+    "atLeast": 97.22
   }
 }
