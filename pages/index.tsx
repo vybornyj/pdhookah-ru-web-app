@@ -4,50 +4,121 @@ const Home = () => (
   <div className='container'>
     <Head>
       <title>Create Next App</title>
-      <link rel='icon' href='/favicon.ico' />
+      <link rel='icon' href='/favicon.ico'/>
     </Head>
 
-    <main>
-      <h1 className='title'>hookahs-vercel-app</h1>
+    <header>
+      <div className="header-wrapper">
+        <div className='top-line'>
+          <div className="logo">
+            <a href="/">
+              <img src="/images/logo.png" alt="logo.png"/>
+            </a>
+          </div>
+          <div className="logo-text">
+            <a href="/">
+              <img src="/images/logo-text.png" alt="logo-text.png"/>
+              <div>Кальянный кейтеринг.</div>
+              <div>Заказ и аренда кальянов.</div>
+            </a>
+          </div>
+          <div className="phone">
+            <div className="phone-number">
+              <span>+7 (925) 555-44-66</span>
+            </div>
+            <div className="phone-callback">
+              <a href="#">Заказать обратный звонок</a>
+            </div>
+          </div>
+        </div>
 
-      <p className='description'>
-        Get started by editing <code>pages/index.js</code>
-      </p>
+        <div className='offer-wrapper'>
+          <div className='offer'>
+            <div className='offer-info'>
+              <h3 className='offer-title-small'>Hookah services in Moscow</h3>
+              <h2 className='offer-text-large'>Создайте свою атмосферу с нашими кальянами.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+                Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+                nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+            </div>
+            <div className='offer-buttons'>
+              <div>Аренда и заказ на дом</div>
+              <div>Кальянный кейтеринг</div>
+            </div>
 
-      <div className='grid'>
-        <a href='https://nextjs.org/docs' className='card'>
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
 
-        <a href='https://nextjs.org/learn' className='card'>
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
+          </div>
+          <div className='social-links'>
+            <div><span>  Вконтакте </span></div>
+            <div><span>  Instagram </span></div>
+            <div><span>  Facebook </span></div>
+          </div>
+        </div>
 
-        <a href='https://github.com/zeit/next.js/tree/master/examples' className='card'>
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
 
-        <a
-          href='https://vercel.com/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          className='card'
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>Instantly deploy your Next.js site to a public URL with Vercel.</p>
-        </a>
       </div>
+    </header>
+
+
+    <main>
+      <section>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <h3>Кальяны на дом</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <ul>
+            <li>профессиональное сопровождение вечера</li>
+            <li>доставка всего необходимого</li>
+            <li>чаши на выбор от глиняных до экзотических фруктов</li>
+            <li>большой выбор топовых табаков и миксов</li>
+          </ul>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <h3>Наши преимущества</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <h3>Кальяны на дом</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <ul>
+            <li>профессиональное сопровождение вечера</li>
+            <li>доставка всего необходимого</li>
+            <li>чаши на выбор от глиняных до экзотических фруктов</li>
+            <li>большой выбор топовых табаков и миксов</li>
+          </ul>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <h3>Кальяны на дом</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam?
+            Alias aliquid aperiam aspernatur consequatur delectus explicabo fugiat magnam nam
+            nihil nulla optio, porro quae ratione rem repellendus, tempore.</p>
+        </div>
+      </section>
+
     </main>
 
     <footer>
-      <a
-        href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-        target='_blank'
-        rel='noopener noreferrer'
-      >
-        Powered by <img src='/vercel.svg' alt='Vercel Logo' />
-      </a>
+      <div>Visa</div>
+      <div>Pay2</div>
+      <div>YandexM</div>
     </footer>
 
     <style jsx>{`
@@ -58,8 +129,81 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        
+        margin: auto;
+        width: 1200px; 
       }
-
+      
+      header-wrapper > h1, h2, h3, h4 {
+        text-transform: uppercase;
+      }
+      
+      header-wrapper {
+        
+      }
+      
+      .top-line {
+        display: flex;       
+      }
+      
+      .logo {
+        flex: 1;
+      }
+      
+      .logo-text {
+        flex: 3;
+      }
+      
+      .phone {
+        flex: 1;
+      }
+      
+      .offer-wrapper {
+        position: relative;        
+      }
+      
+      .offer {
+        margin-left: 280px;
+      }
+      
+      .offer-title-small {
+        text-transform: uppercase;
+      }
+      
+      .offer-text-large {
+        text-transform: uppercase;
+        font-size: 70px;
+        line-height: 86px;
+        margin: 0 0 26px;
+      }
+      
+      .offer-info {
+        margin-top: 100px;
+      }
+      
+      .offer-buttons > div {
+        text-transform: uppercase;
+        display: inline-block;
+        line-height: 64px;
+        border: 2px solid goldenrod;
+        border-radius: 35px;
+        margin-right: 20px;
+        width: 270px;
+        text-align: center;
+        font-size: 14px;
+      }
+      
+      .social-links {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+      }
+      
+      .social-links > div {
+        transform: rotate(-90deg);
+        margin-bottom: 90px;
+      }
+            
       main {
         padding: 5rem 0;
         flex: 1;
@@ -67,6 +211,12 @@ const Home = () => (
         flex-direction: column;
         justify-content: center;
         align-items: center;
+                
+        margin-left: 280px;
+      }
+      
+      main > section h3 {
+        color: goldenrod;      
       }
 
       footer {
@@ -78,95 +228,7 @@ const Home = () => (
         align-items: center;
       }
 
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
+      
 
       @media (max-width: 600px) {
         .grid {
