@@ -3,11 +3,11 @@ import Head from 'next/head'
 const Page = () => (
   <div className='container'>
     <Head>
-      <title>TEST</title>
+      <title>TEST 2</title>
     </Head>
 
     <main>
-      <h1 className='title'>TEST</h1>
+      <h1 className='title'>TEST 2</h1>
     </main>
   </div>
 )
