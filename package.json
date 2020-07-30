@@ -8,8 +8,6 @@
   ],
   "scripts": {
     "_depcheck": "depcheck",
-    "_lint-format": "prettier --write {*,**/*}.{ts,tsx,js,jsx,mjs,cjs,json,md}",
-    "_lint-js": "eslint --fix --rule \"{'no-console':2}\" --ext .ts,.tsx,.js,.jsx,.mjs,.cjs .",
     "_lint-types": "tsc --pretty --noEmit",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
     "_upgrade": "ncu -u"
@@ -19,7 +17,7 @@
     "webpack": "5.0.0-beta.22"
   },
   "dependencies": {
-    "next": "9.5.0",
+    "next": "9.5.1",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "reactn": "2.2.7",
@@ -33,7 +31,7 @@
     "typescript": "3.9.7"
   },
   "optionalDependencies": {
-    "querystring": "^0.2.0"
+    "querystring": "0.2.0"
   },
   "engines": {
     "node": "12.x",
