@@ -1,23 +1,27 @@
 import Head from 'next/head'
 
+const pangram = () => (
+  <p>
+    Съешь ещё этих мягких французских булок, да выпей чаю. Съешь ещё этих мягких французских булок, да выпей чаю. Съешь ещё этих мягких французских
+    булок, да выпей чаю. Съешь ещё этих мягких французских булок, да выпей чаю.
+  </p>
+)
+
 const Home = () => (
   <div className='container'>
     <Head>
-      <title>Create Next App</title>
-      <link rel='icon' href='/favicon.ico' />
+      <title>Кальяны МСК</title>
     </Head>
 
     <header>
       <div className='header-wrapper'>
         <div className='top-line'>
           <div className='logo'>
-            <a href='/'>
-              <img src='/images/logo.png' alt='logo.png' />
-            </a>
+            <a href='/'>{/* <img src='/images/logo.png' alt='logo.png' /> */}</a>
           </div>
           <div className='logo-text'>
             <a href='/'>
-              <img src='/images/logo-text.png' alt='logo-text.png' />
+              {/* <img src='/images/logo-text.png' alt='logo-text.png' /> */}
               <div>Кальянный кейтеринг.</div>
               <div>Заказ и аренда кальянов.</div>
             </a>
@@ -37,10 +41,7 @@ const Home = () => (
             <div className='offer-info'>
               <h3 className='offer-title-small'>Hookah services in Moscow</h3>
               <h2 className='offer-text-large'>Создайте свою атмосферу с нашими кальянами.</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-                explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-              </p>
+              {pangram()}
             </div>
             <div className='offer-buttons'>
               <div>Аренда и заказ на дом</div>
@@ -65,43 +66,22 @@ const Home = () => (
     <main>
       <section>
         <div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
           <h3>Кальяны на дом</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
+          {pangram()}
           <ul>
             <li>профессиональное сопровождение вечера</li>
             <li>доставка всего необходимого</li>
             <li>чаши на выбор от глиняных до экзотических фруктов</li>
             <li>большой выбор топовых табаков и миксов</li>
           </ul>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
           <h3>Наши преимущества</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
           <h3>Кальяны на дом</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
+          {pangram()}
           <ul>
             <li>профессиональное сопровождение вечера</li>
             <li>доставка всего необходимого</li>
@@ -109,27 +89,16 @@ const Home = () => (
             <li>большой выбор топовых табаков и миксов</li>
           </ul>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
           <h3>Кальяны на дом</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, dolor, quam? Alias aliquid aperiam aspernatur consequatur delectus
-            explicabo fugiat magnam nam nihil nulla optio, porro quae ratione rem repellendus, tempore.
-          </p>
+          {pangram()}
+          {pangram()}
         </div>
       </section>
     </main>
 
     <footer>
-      <div>Visa</div>
-      <div>Pay2</div>
-      <div>YandexM</div>
+      <div>(c) 2020</div>
     </footer>
 
     <style jsx>{
@@ -255,14 +224,8 @@ const Home = () => (
       /* language=CSS */ `
         html,
         body {
-          padding: 0;
-          margin: 0;
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `
     }</style>
