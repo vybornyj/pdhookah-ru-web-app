@@ -10,7 +10,8 @@
     "_depcheck": "depcheck",
     "_lint-types": "tsc --pretty --noEmit",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
-    "_upgrade": "ncu -u"
+    "_upgrade": "ncu -u",
+    "build": "yarn set version berry && yarn install && yarn next build"
   },
   "resolutions": {
     "chokidar": "3.4.1",
@@ -25,7 +26,7 @@
   },
   "devDependencies": {
     "@types/node": "14.0.27",
-    "@types/react": "16.9.43",
+    "@types/react": "16.9.44",
     "pages": "link:./pages",
     "src": "link:./src",
     "typescript": "3.9.7"
@@ -34,7 +35,7 @@
     "querystring": "0.2.0"
   },
   "engines": {
-    "node": "12.x",
+    "node": ">=12.x",
     "yarn": ">=1.22.4"
   },
   "typeCoverage": {
