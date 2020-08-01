@@ -22,7 +22,8 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "reactn": "2.2.7",
-    "sanitize.css": "11.0.1"
+    "sanitize.css": "11.0.1",
+    "styled-jsx": "3.3.0"
   },
   "devDependencies": {
     "@types/node": "14.0.27",
