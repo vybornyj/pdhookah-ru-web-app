@@ -10,7 +10,8 @@
     "_depcheck": "depcheck",
     "_lint-types": "tsc --pretty --noEmit",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
-    "_upgrade": "ncu -u"
+    "_upgrade": "ncu -u",
+    "dev": "next dev -p 80"
   },
   "resolutions": {
     "webpack": "5.0.0-beta.22"
