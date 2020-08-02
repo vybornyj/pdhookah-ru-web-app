@@ -1,0 +1,809 @@
+import Head from 'next/head'
+import { Footer } from 'src/components/common/Footer'
+
+const Rental = () => (
+  <div className='container'>
+    <Head>
+      <title>Аренда и доставка кальяна на дом</title>
+    </Head>
+
+    <header>
+      <div className='header-wrapper'>
+        <div className='top-line'>
+          <div className='logo'>
+            <a href='/'>
+              <img src='/logo.png' alt='logo.png' />
+            </a>
+            <div className='logo-text'>
+              Кальянный кейтеринг. <br />
+              Заказ и аренда кальянов.
+            </div>
+          </div>
+          <div className='phone'>
+            <div className='phone-number'>
+              <a href='tel:+79255554466'>+ 7 (925) 355-00-53</a>
+            </div>
+            <div className='phone-callback'>
+              <a href='#'>Заказать обратный звонок</a>
+            </div>
+          </div>
+        </div>
+
+        <div className='offer-wrapper'>
+          <div className='offer'>
+            <div className='offer-info'>
+              <h3 className='offer-title-small'>Hookah services in Moscow</h3>
+              <h2 className='offer-text-large'>
+                Аренда и доставка <span>кальяна на дом</span>
+              </h2>
+              <h4>Готовые кальяны круглосуточно, с бесплатной доставкой в любую точку столицы</h4>
+              <ul>
+                <li>
+                  95% доставок занимают <b>менее 90 мин.</b>
+                </li>
+                <li>Забираем кальян на следующий день.</li>
+                <li>Большой парк кальянов.</li>
+                <li>Все популярные табаки и топовые вкусы.</li>
+              </ul>
+            </div>
+            <div className='offer-buttons'>
+              <div className='rental'>Заказать кальян</div>
+            </div>
+          </div>
+          <div className='social-links'>
+            <div>
+              <img src='/vkontakte.png' alt='' />
+              <span>Вконтакте </span>
+            </div>
+            <div>
+              <img src='/instagram.png' alt='' />
+              <span>Instagram </span>
+            </div>
+            <div>
+              <img src='/facebook.png' alt='' />
+              <span>Facebook</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section className='configure'>
+        <div className='container'>
+          <div className='configure-hookah'>
+            <h2>
+              Собери <span>свой кальян:</span>
+            </h2>
+            <div className='order-options'>
+              <div>Кальян</div>
+              <div>Чаща</div>
+              <div>Табак</div>
+              <div>Вкус</div>
+              <div>Дополнительно</div>
+            </div>
+            <div className='hookah-variant'>
+              <div>Классический</div>
+              <div>Дизайнерские</div>
+            </div>
+
+            <div className='order-info'>
+              <h3>При заказе кальяна вы получаете кальянный набор:</h3>
+              <div className='hookah-kit'>
+                <div className='hookah-kit-col'>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Кальян</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Плитка для углей</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Одноразовые мундштуки</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Табак</div>
+                  </div>
+                </div>
+                <div className='hookah-kit-col'>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Щипчики</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Угли</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Чаша</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' />
+                    <div>
+                      Жидкость на выбор: <br /> молоко, алкоголь коктейль...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className='make-call-order'>
+            <div>
+              <h3>Не можете выбрать?</h3>
+              <p>
+                Просто позвоните нам, и мы соберем <br /> для вас кальян!
+              </p>
+              <div className='make-call-order-phone'>
+                <img src='/assets/images/hookah-item.jpg' alt='' />
+                +7 (925) 355-00-53
+              </div>
+            </div>
+            <div className='order-result'>
+              <div className='order-container'>
+                <div>
+                  <span>Заказ на сумму:</span>
+                  <span className='price'>5000</span>
+                </div>
+                <div className='open-cart'>Открыть корзину</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='home-order'>
+        <div className='home-order-container'>
+          <h2>
+            Заказать <span> кальян на дом</span> просто
+          </h2>
+          <div className='home-order-list'>
+            <div className='home-order-list-item'>
+              <img src='assets/images/hookah-item.jpg' alt='' />
+              <h3>Оформить заказ</h3>
+              <p>Соберите свой кальян прямо на сайте или закажите по телефону</p>
+            </div>
+            <div className='home-order-list-item'>
+              <img src='assets/images/hookah-item.jpg' alt='' />
+              <h3>Подготовка кальяна</h3>
+              <p>Специалист подготовит фруктовую чашу, табак с любым вкусом и доставит в назначенное время.</p>
+            </div>
+            <div className='home-order-list-item'>
+              <img src='assets/images/hookah-item.jpg' alt='' />
+              <h3>Доставка</h3>
+              <p>
+                Вы получаете кальянный набор: кальян, готовый фрукт, плиту, угли, щипчики, мундштуки и инструкцию. При необходимости кальян будет
+                собран и раскурен нашим специалистом.
+              </p>
+            </div>
+            <div className='home-order-list-item'>
+              <img src='assets/images/hookah-item.jpg' alt='' />
+              <h3>Забираем</h3>
+              <p>Кальян забираем с утра (о времени договариваемся), можно не мыть, просто слейте воду и положите в коробку.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='reasons-to-order'>
+        <div className='reasons-to-order-container'>
+          <h2>
+            <span>8 причин заказать</span>
+            <br /> готовый кальян у нас:
+          </h2>
+          <div className='reasons-list'>
+            <div>
+              <div className='reasons-list-item'>
+                <span>15</span>
+                <p>очень много всего</p>
+              </div>
+              <div className='reasons-list-item'>
+                <span>15</span>
+                <p>очень много всего</p>
+              </div>
+              <div className='reasons-list-item'>
+                <span>15</span>
+                <p>очень много всего</p>
+              </div>
+            </div>
+            <div>
+              <div className='reasons-list-item'>
+                <span>15</span>
+                <p>очень много всего</p>
+              </div>
+              <div className='reasons-list-item'>
+                <span>15</span>
+                <p>очень много всего</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className='information'>
+        <p>
+          Если вы планируете проведение вечеринки, торжества или просто хотите посидеть с друзьями в приятной атмосфере, разнообразить вечер поможет
+          выездной кальян. Это модная услуга, благодаря которой не нужно отправляться в бары или лаунж-зоны ресторанов, теперь профессиональный
+          кальянщик может приехать к вам самостоятельно, чтобы замиксовать любимые вкусы.
+        </p>
+        <h2>Как это работает</h2>
+        <p>
+          Your Hookah предлагает разные варианты «домашнего кейтеринга». Вы можете заказать либо выезд кальянщика на дом, либо простой кальян с
+          выбранным вкусом. В первом случае профессиональное сопровождение мероприятия гарантировано, во втором вам просто оставят подготовленный
+          кальян, который заберут на следующий день. Вам достаточно позвонить по указанному номеру телефона или собрать свой заказ на сайте. Затем
+          выбрать подходящее время доставки: наша фирма работает круглосуточно, предоставляя отличные кальяны в любую точку Москвы. Затем по
+          указанному адресу придет наш кальянщик, который раскурит кальян и оставит его до следующего дня. В комплект заказа входят:
+        </p>
+        <ul>
+          <li>сам кальян;</li>
+          <li>классическая или фруктовая чаша на ваш вкус;</li>
+          <li>угли;</li>
+          <li>щипцы;</li>
+          <li>печка для розжига углей;</li>
+          <li>одноразовые мундштуки.</li>
+        </ul>
+        <p>
+          Цена кальяна зависит от выбранного табака, чаши, а также от наполнения колбы. Обычно туда наливают воду, добавляя фреши, сироп, алкоголь или
+          кока-колу.
+        </p>
+        <p>
+          Выезд кальяна на дом удобен тем, что вам не придется никуда идти. А если вы закажете услугу без сопровождения специалиста, то можно будет
+          провести вечер в приватной обстановке, без посторонних людей рядом.
+        </p>
+        <h2>Кальян на мероприятия</h2>
+        <p>
+          Иногда обойтись без помощи профессионала все-таки нельзя. Это касается масштабных мероприятий, где может быть много гостей. В этом случае с
+          кальяном (или кальянами, все зависит от ваших предпочтений) будет управляться мастер. Он не только замиксует любимые вкусы, но и будет
+          полностью обслуживать все привезенные устройства.
+        </p>
+        <p>
+          Такой вариант идеально подойдет для девичника или мальчишника, шумного дня рождения или другого крупного праздника, куда вы пригласите всех
+          своих друзей. Нередко кальяны заказывают на корпоративы и даже деловые переговоры.
+        </p>
+        <h2>Наши преимущества</h2>
+        <p>Почему стоит выбрать именно Your Hookah? Причин несколько:</p>
+        <ul>
+          <li>Мы профессионалы: 12 лет наша компания работает с кальянами.</li>
+          <li>Средний стаж наших кальянщиков — 5 лет.</li>
+          <li>Мы предлагаем топовые виды табака, которых нет в розничной продаже.</li>
+          <li>Гарантируем высокое качество всех используемых продуктов.</li>
+          <li>Доставляем кальяны по всей Москве в течение 90 минут.</li>
+        </ul>
+        <p>
+          А еще мы ценим каждого клиента и выбираем индивидуальный подход. Заказать кальян в нашей фирме очень просто: соберите свой микс на главной
+          странице и переходите к оформлению покупки. А если вы не знаете, что именно хотите получить, просто созвонитесь с нашими менеджерами по
+          указанному номеру телефона, и вам дадут исчерпывающую консультацию. Если вы хотите заказать несколько кальянов на мероприятие, пожалуйста,
+          позвоните нам заранее: так мы полностью исключим вероятность задержек и заранее подготовим все необходимое.
+        </p>
+        <h3>
+          <a href='/'>Заказ кальяна и табака на дом</a>
+        </h3>
+        {/* <div>
+            <div>
+              <div>
+                <p>
+                  Вы пробовали кальян и вам понравилось? Хотелось бы иметь его у себя дома, чтобы в любой момент можно было насладиться дымным
+                  коктейлем, но останавливает сложность обслуживания, да и место для хранения выделить негде? Выход есть! Вы можете легко заказать
+                  кальян на дом. Это отличная альтернатива покупке собственного кальяна, ведь все, что вам нужно, — это позвонить по указанному на
+                  сайте телефону и дождаться, когда вам привезут ваш заказ. И ничего лишнего!
+                </p>
+                <h2>Кальяны на дом</h2>
+                <p>
+                  Кальяны становятся все более популярным способом дополнить вечер. Их заказывают на шумные вечеринки и романтические свидания, на
+                  крупные торжества, корпоративы и даже деловые встречи. Услуга доставки готовых кальянов на дом идеально подходит для тех, кто хочет
+                  приятно удивить друзей и разбавить вечер нотками восточной сказки. При этом вы можете заказать кальян, арендовать его на несколько
+                  дней или заказать сопровождение вечера: компания Your Hookah предлагает самые удобные варианты:
+                </p>
+                <ul>
+                  <li>
+                    Кальян на вечер: вы заказываете подходящий табак, наполнение колбы, тип кальяна (простой или дизайнерский), чашу. Наш специалист
+                    привозит все необходимое, подготавливает кальян и уезжает. На следующий день мы забираем его в удобное для вас время.
+                  </li>
+                  <li>
+                    Кальян в аренду: вариант для тех, кому кальян необходим на несколько дней. Мы привозим все необходимое, а обслуживанием вы
+                    занимаетесь самостоятельно, подготавливая миксы и делая забивки.
+                  </li>
+                  <li>
+                    Сопровождение вечера. Наш опытный кальянщик не только привезет все необходимое, но и будет следить за качеством тяги, при
+                    необходимости подогревая угли или делая новую забивку.
+                  </li>
+                </ul>
+                <p>Выбрать подходящую услугу вы можете прямо на нашем сайте.</p>
+                <h2>Наши преимущества</h2>
+                <p>
+                  Компания Your Hookah круглосуточно доставляет кальяны на дом. Специально для вас мы работаем без перерывов и выходных, так что вы в
+                  любой момент можете заказать кальянный бар на выезд в любой район Москвы. Просто закажите услугу через наш официальный сайт, и в
+                  течение 90 минут мы привезем вам выбранный кальян. Почему стоит обращаться именно к нам?
+                </p>
+                <ul>
+                  <li>Работаем в этой сфере более 12 лет.</li>
+                  <li>Средний стаж работы наших кальянщиков — 5 лет.</li>
+                  <li>Предлагаем уникальный выбор табака для кальяна, который нельзя купить в рознице.</li>
+                  <li>Предлагаем как классические, так и дизайнерские кальяны — для настоящих эстетов.</li>
+                  <li>Делаем кальяны на классических или фруктовых чашах.</li>
+                  <li>Ведем полное обслуживание вечеринок.</li>
+                  <li>Предлагаем большой выбор наполнения: добавим к воде кока-колу, свежий сок или другой напиток.</li>
+                </ul>
+                <p>
+                  Если вы заказываете услугу без сопровождения, мы не требуем мыть кальян: просто вылейте из него воду и уложите в коробку перед
+                  возвратом, все остальное мы сделаем самостоятельно.
+                </p>
+                <h2>Как заказать услугу</h2>
+                <p>
+                  Чтобы сделать заказ через наш официальный сайт, просто составьте свой идеальный кальян и переходите к оформлению доставки. Если вы
+                  заказываете услугу впервые и не знаете, что именно выбрать, свяжитесь с нашими менеджерами, которые дадут вам исчерпывающую
+                  консультацию. Кроме того, вы можете написать нам в соцсетях: мы ответим вам в кратчайшее время. Но самый простой способ — позвонить
+                  нам по указанному номеру телефона или заказать обратный звонок.
+                </p>
+              </div>
+            </div>
+          </div> */}
+        <h3>
+          <a href='/'>Как заказать кальян на дом</a>
+        </h3>
+        {/* <div>
+            <p>
+              Кальяны набирают все большую популярность: их заказывают в качестве приятного дополнения к вечеринке, торжественному событию и даже на
+              деловые переговоры. Если вы хотите разнообразить вечер, но не хотите выходить из дома, есть отличный вариант: закажите кальян на дом.
+              Это идеальная возможность для тех, кто не желает отправляться в бары и лаунж-зоны, но хочет добавить вечеру восточной экзотики. Все, что
+              нужно, — позвонить в компанию Your Hookah и заказать кальян с доставкой.
+            </p>
+            <h2>Кальян на дом</h2>
+            <p>
+              Вы пробовали кальян и вам понравилось? Вы с удовольствием заказываете его в ресторанах как приятное дополнение к изысканным блюдам? Или
+              вы всерьез раздумывали о том, что стоит приобрести собственный кальян, чтобы забивать его дома? Совсем не обязательно тратиться на
+              покупку и искать хорошие табаки в розничных магазинах: теперь вы можете заказать доставку готового кальяна на дом. Это здорово сэкономит
+              время и деньги: гораздо проще сделать заказ именно тогда, когда вам захотелось насладиться дымным коктейлем, а не закупать все
+              необходимое оборудование самостоятельно.
+            </p>
+            <p>Компания Your Hookah предлагает несколько удобных форматов:</p>
+            <ul>
+              <li>
+                Кальян на вечер. Вы составляете свой индивидуальный заказ, подбирая сам кальян (простой или дизайнерский), подходящий табак,
+                наполнение колбы и понравившуюся чашу. Специалист нашей фирмы привозит все необходимое, подготавливает кальян и уезжает. На следующий
+                день мы забираем кальян в удобное вам время.
+              </li>
+              <li>
+                Кальян в аренду. Этот вариант идеально подойдет тем, кому оборудование требуется на несколько дней. Мы точно так же привозим и
+                подготавливаем все необходимое, а дальнейшим обслуживанием вы занимаетесь самостоятельно, делая миксы и забивки.
+              </li>
+              <li>
+                Сопровождение вечера. Кальянщик компании не только доставит все необходимое, но и будет обслуживать кальян на протяжении всего вечера,
+                а затем увезет оборудование.
+              </li>
+            </ul>
+            <p>Выбрать подходящий формат услуги вы можете прямо на нашем сайте.</p>
+            <h2>Наши преимущества</h2>
+            <p>
+              Компания Your Hookah круглосуточно доставляет кальяны на дом. Мы работаем в режиме 24/7, выезжая в любой район Москвы. После заказа
+              услуги на нашем официальном сайте мы подвезем готовый кальян в течение 90 минут. В чем наши преимущества?
+            </p>
+            <ul>
+              <li>Более 12 лет работаем в этой сфере.</li>
+              <li>В нашем штате только опытные кальянщики с большим стажем.</li>
+              <li>Используем только качественные табаки топовых марок, которые не продаются в рознице.</li>
+              <li>Для настоящих эстетов предлагаем дизайнерские кальяны.</li>
+              <li>Предлагаем классические и фруктовые чаши.</li>
+              <li>Проводим полное обслуживание вечеринок любого формата.</li>
+              <li>Предлагаем большой выбор наполнения: добавим к воде кока-колу, свежий сок или другой напиток.</li>
+            </ul>
+            <p>
+              Если вы заказали услугу без сопровождения, в конце вечера достаточно вылить из кальяна воду и убрать его в коробку, остальное мы сделаем
+              сами.
+            </p>
+            <h2>Как заказать услугу</h2>
+            <p>
+              Чтобы заказать недорогой кальян на дом, просто воспользуйтесь «Корзиной» на нашем сайте. Соберите свой идеальный кальян и переходите к
+              оформлению заказа. Уточнить все интересующие вас подробности о пакетах услуг для вечеринок большого формата вы можете, позвонив нам по
+              указанному номеру телефона или связавшись с нашими представителями в любой удобной для вас соцсети.
+            </p>
+          </div> */}
+      </section>
+    </main>
+
+    <Footer />
+
+    <style jsx>{
+      /* language=CSS */ `
+        .container {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          color: white;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+          text-transform: uppercase;
+        }
+
+        header {
+          background: #606f86;
+          width: 100%;
+        }
+
+        .header-wrapper {
+          margin: auto;
+          width: 1200px;
+        }
+
+        .top-line {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          margin: 20px;
+          text-align: center;
+        }
+
+        .logo {
+        }
+
+        .logo-text {
+          margin-top: 15px;
+          font-size: 13px;
+          line-height: 15px;
+        }
+
+        .phone-number {
+          margin-top: 20px;
+          font-weight: bold;
+          font-size: 28px;
+        }
+
+        .phone-callback {
+          text-decoration: underline;
+        }
+
+        .offer-wrapper {
+          position: relative;
+          width: 1200px;
+          margin-bottom: 200px;
+        }
+
+        .offer {
+          padding: 5px 20px;
+        }
+
+        .offer-info > h3 {
+          font-size: 22px;
+          font-weight: normal;
+        }
+
+        .offer-info > p {
+          width: 500px;
+          padding: 0;
+          font-size: 14px;
+        }
+
+        .offer-text-large {
+          text-transform: uppercase;
+          font-size: 70px;
+          line-height: 86px;
+          margin: 0 0 26px;
+          width: 900px;
+        }
+
+        .offer-text-large > span {
+          color: steelblue;
+        }
+
+        .offer-buttons {
+          margin-top: 100px;
+        }
+
+        .open-cart,
+        .offer-buttons > div {
+          text-transform: uppercase;
+          display: inline-block;
+          line-height: 70px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          border-radius: 10px;
+          margin-right: 40px;
+          width: 335px;
+          text-align: center;
+          font-size: 18px;
+          letter-spacing: 1px;
+        }
+
+        .open-cart,
+        .rental {
+          background: linear-gradient(90deg, #125b90, #3795dd);
+          background: -moz-linear-gradient(#125b90, #3795dd);
+        }
+
+        .catering {
+          background: linear-gradient(90deg, #bf841e, #ebad40);
+          background: -moz-linear-gradient(#bf841e, #ebad40);
+        }
+
+        .social-links {
+          position: absolute;
+          top: 55px;
+          left: -125px;
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+
+        .social-links > div {
+          height: 120px;
+          transform: rotate(-90deg);
+          margin-bottom: 90px;
+        }
+
+        .social-links > div > img {
+          transform: rotate(90deg);
+        }
+
+        .social-links > div > span {
+          margin-left: 20px;
+        }
+
+        main {
+          background: #10131c;
+          width: 100%;
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+
+        section {
+          margin: auto;
+          width: 1200px;
+        }
+
+        section.configure {
+          margin-top: 50px;
+          margin-left: 525px;
+          margin-bottom: 100px;
+        }
+
+        section.configure > .container {
+          margin: auto;
+        }
+
+        section.configure h2 {
+          font-weight: bold;
+          font-size: 40px;
+        }
+
+        section.configure h2 > span {
+          color: steelblue;
+        }
+
+        .configure-hookah {
+          margin: auto;
+          width: 900px;
+          padding: 0 50px;
+        }
+
+        .order-options {
+          margin-top: 40px;
+          display: flex;
+        }
+
+        .hookah-kit {
+          display: flex;
+        }
+
+        .hookah-kit-col:nth-child(1) {
+          margin-right: 50px;
+        }
+
+        .hookah-kit-col > div {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+
+        .hookah-kit-col > div > img {
+          margin-right: 10px;
+        }
+
+        .hookah-kit > div {
+          display: flex;
+          flex-direction: column;
+          width: 50%;
+        }
+
+        .hookah-kit > div > div {
+          padding: 10px 0;
+        }
+
+        .order-options > div {
+          margin-right: 30px;
+          border-radius: 10px;
+          padding: 10px 25px;
+          text-transform: uppercase;
+        }
+
+        .order-options > div:nth-child(1) {
+          border: 1px solid darkgoldenrod;
+          color: darkgoldenrod;
+        }
+
+        .hookah-variant {
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .hookah-variant > div {
+          width: 150px;
+          height: 250px;
+          background: #16354e;
+          margin: 0 10px;
+          text-align: center;
+        }
+
+        .order-info {
+          margin-top: 30px;
+        }
+
+        .make-call-order {
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+        }
+
+        .make-call-order > div:nth-child(1) {
+          border-right: 1px white solid;
+          padding-right: 60px;
+          margin-left: 50px;
+        }
+
+        .make-call-order h3 {
+          width: 390px;
+          font-size: 28px;
+          margin: 0;
+        }
+
+        .make-call-order p {
+          font-size: 18px;
+        }
+
+        .make-call-order-phone {
+          font-size: 26px;
+          font-weight: bold;
+        }
+
+        .make-call-order-phone > img {
+          width: 36px;
+          margin-right: 14px;
+        }
+
+        .order-result {
+          margin-left: 50px;
+          display: flex;
+          align-items: center;
+        }
+
+        .order-container {
+        }
+
+        .order-container > div:nth-child(1) {
+          display: flex;
+          align-items: center;
+        }
+
+        .order-container .price {
+          margin-left: 20px;
+          font-weight: bold;
+          font-size: 24px;
+        }
+
+        .open-cart {
+          width: 300px;
+          margin-top: 20px;
+        }
+
+        section.home-order {
+          background: #202157;
+          width: 100%;
+        }
+
+        .home-order-container {
+          width: 1200px;
+          margin: auto;
+        }
+
+        .home-order h2 {
+          font-size: 40px;
+        }
+
+        .home-order-list {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .home-order-list-item {
+          padding: 10px;
+          width: 300px;
+          height: 450px;
+        }
+
+        .home-order-list-item > img {
+          opacity: 0.03;
+          background: #3722a7;
+          border-radius: 90px;
+          width: 180px;
+          height: 180px;
+        }
+
+        .home-order-list-item h3 {
+          color: darkgoldenrod;
+          margin-bottom: 0;
+        }
+
+        .home-order-list-item > p {
+          padding-right: 10px;
+        }
+        /* REASONS TO ORDER */
+
+        .reasons-to-order {
+          width: 100%;
+        }
+
+        .reasons-to-order-container {
+          margin: auto;
+          width: 1200px;
+          padding: 20px;
+        }
+
+        .reasons-to-order h2 {
+          font-size: 46px;
+        }
+
+        /* INFORMATION */
+
+        section.information {
+          margin-top: 80px;
+          margin-bottom: 200px;
+          padding: 5px 20px;
+        }
+
+        section.information h2 {
+          color: goldenrod;
+          font-size: 24px;
+          margin-bottom: 0;
+        }
+
+        section.information h3 {
+          color: goldenrod;
+          font-size: 16px;
+          margin-bottom: 0;
+          text-decoration: underline;
+        }
+
+        .payments {
+          margin: 40px 0;
+        }
+
+        .payments img {
+          margin-right: 50px;
+        }
+
+        @media (max-width: 600px) {
+          .grid {
+            width: 100%;
+            flex-direction: column;
+          }
+        }
+      `
+    }</style>
+
+    <style jsx global>{
+      /* language=CSS */ `
+        html,
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+            sans-serif;
+        }
+      `
+    }</style>
+  </div>
+)
+
+export default Rental
