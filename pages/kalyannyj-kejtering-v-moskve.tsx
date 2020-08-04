@@ -1,6 +1,8 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Footer } from 'src/components/common/Footer'
+import { SvgLogo } from 'src/components/common/SvgLogo'
 import { TempPangram } from 'src/components/TempPangram'
 
 const Page: NextPage = () => (
@@ -13,7 +15,12 @@ const Page: NextPage = () => (
       <div className='header-wrapper'>
         <div className='top-line'>
           <div className='logo'>
-            <a href='/'>{/* <img src='/images/logo.png' alt='logo.png' /> */}</a>
+            {' '}
+            <Link href='/'>
+              <a>
+                <SvgLogo />
+              </a>
+            </Link>
           </div>
           <div className='logo-text'>
             <a href='/'>

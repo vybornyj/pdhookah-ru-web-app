@@ -1,12 +1,16 @@
+import Link from 'next/link'
 import React, { FunctionComponent } from 'react'
+import { SvgLogo } from 'src/components/common/SvgLogo'
 
 export const Footer: FunctionComponent = () => (
   <footer>
     <div>
       <div>
-        <a href='/'>
-          <img src='/logo.png' alt='logo.png' />
-        </a>
+        <Link href='/'>
+          <a>
+            <SvgLogo />
+          </a>
+        </Link>
       </div>
       <div>Заказ и аренда кальянов</div>
       <div>Кальянный кейтеринг</div>

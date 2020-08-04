@@ -1,7 +1,9 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import { Button1 } from 'src/components/Button1'
 import { Footer } from 'src/components/common/Footer'
+import { SvgLogo } from 'src/components/common/SvgLogo'
 import { RentalBlock2 } from 'src/components/RentalBlock2'
 
 const Page: NextPage = () => (
@@ -14,9 +16,11 @@ const Page: NextPage = () => (
       <div className='header-wrapper'>
         <div className='top-line'>
           <div className='logo'>
-            <a href='/'>
-              <img src='/logo.png' alt='logo.png' />
-            </a>
+            <Link href='/'>
+              <a>
+                <SvgLogo />
+              </a>
+            </Link>
             <div className='logo-text'>
               Кальянный кейтеринг. <br />
               Заказ и аренда кальянов.

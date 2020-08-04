@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import { Button1 } from 'src/components/Button1'
 import { Footer } from 'src/components/common/Footer'
+import { SvgLogo } from 'src/components/common/SvgLogo'
 
 const Home = () => (
   <div className='container'>
@@ -13,9 +14,11 @@ const Home = () => (
       <div className='header-wrapper'>
         <div className='top-line'>
           <div className='logo'>
-            <a href='/'>
-              <img src='/logo.png' alt='logo.png' />
-            </a>
+            <Link href='/'>
+              <a>
+                <SvgLogo />
+              </a>
+            </Link>
             <div className='logo-text'>
               Кальянный кейтеринг. <br />
               Заказ и аренда кальянов.
