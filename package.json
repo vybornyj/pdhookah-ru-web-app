@@ -11,7 +11,8 @@
     "_lint-types": "tsc --pretty --noEmit",
     "_type-coverage": "type-coverage --ignore-catch --detail --update",
     "_upgrade": "ncu -u",
-    "_upgrade-check": "ncu"
+    "_upgrade-check": "ncu",
+    "dev": "next dev -p 80"
   },
   "resolutions": {
     "webpack": "5.0.0-beta.22"
