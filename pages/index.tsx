@@ -131,6 +131,13 @@ const Home = () => (
 
     <style jsx>{
       /* language=CSS */ `
+        @font-face {
+          font-family: 'nickelodeon-headline';
+          src: url('/assets/fonts/nickelodeon-2001-headline.ttf');
+          font-weight: bold;
+          font-style: normal;
+        }
+
         .container {
           min-height: 100vh;
           display: flex;
@@ -138,6 +145,7 @@ const Home = () => (
           justify-content: center;
           align-items: center;
           color: white;
+          background: #10131b;
         }
 
         h1,
@@ -148,13 +156,14 @@ const Home = () => (
         }
 
         header {
-          background: #606f86;
+          background: url('/assets/images/main/layer1.png') no-repeat;
           width: 100%;
         }
 
         .header-wrapper {
           margin: auto;
           width: 1200px;
+          opacity: 1;
         }
 
         .top-line {
@@ -162,7 +171,7 @@ const Home = () => (
           flex-direction: row;
           justify-content: space-between;
           flex-wrap: wrap;
-          margin: 20px;
+          margin: 20px 10px 20px 20px;
           text-align: center;
         }
 
@@ -178,11 +187,14 @@ const Home = () => (
         .phone-number {
           margin-top: 20px;
           font-weight: bold;
-          font-size: 28px;
+          font-size: 20px;
+          font-family: nickelodeon-headline;
         }
 
-        .phone-callback {
+        .phone-callback a {
           text-decoration: underline;
+          color: #f5f5f5;
+          font-size: 14px;
         }
 
         .offer-wrapper {
@@ -192,7 +204,7 @@ const Home = () => (
         }
 
         .offer {
-          padding: 5px 20px;
+          padding: 5px 25px;
         }
 
         .offer-info > h3 {
@@ -225,20 +237,19 @@ const Home = () => (
         .offer-buttons > div {
           text-transform: uppercase;
           display: inline-block;
-          line-height: 70px;
+          line-height: 69px;
           /*border: 2px solid goldenrod;*/
-          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-          border-radius: 10px;
+          box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.4);
+          border-radius: 12px;
           margin-right: 40px;
-          width: 335px;
+          width: 330px;
           text-align: center;
           font-size: 18px;
           letter-spacing: 1px;
         }
 
         .rental {
-          background: linear-gradient(90deg, #125b90, #3795dd);
-          background: -moz-linear-gradient(#125b90, #3795dd);
+          background: linear-gradient(244.24deg, #42a7f2 -16.97%, #003d6a 134.56%, #1a88db 134.56%);
         }
 
         .catering {
@@ -269,7 +280,7 @@ const Home = () => (
         }
 
         main {
-          background: #10131c;
+          margin-top: -10px;
           width: 100%;
           flex: 1;
           display: flex;
