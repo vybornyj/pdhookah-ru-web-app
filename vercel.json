@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "regions": ["cdg1"],
+  "trailingSlash": false,
+  "scripts": {
+    "vercel-build": "next build"
+  }
+}

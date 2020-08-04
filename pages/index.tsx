@@ -17,11 +17,11 @@ const Home = () => (
       <div className='header-wrapper'>
         <div className='top-line'>
           <div className='logo'>
-            <a href='/'>{/* <img src='/images/logo.png' alt='logo.png' /> */}</a>
+            <a href='/'>{/* <img deus-date-src='/images/logo.png' alt='logo.png' /> */}</a>
           </div>
           <div className='logo-text'>
             <a href='/'>
-              {/* <img src='/images/logo-text.png' alt='logo-text.png' /> */}
+              {/* <img deus-date-src='/images/logo-text.png' alt='logo-text.png' /> */}
               <div>Кальянный кейтеринг.</div>
               <div>Заказ и аренда кальянов.</div>
             </a>
