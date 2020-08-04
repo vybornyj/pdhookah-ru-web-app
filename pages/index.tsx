@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import Link from 'next/link'
+import { Button1 } from 'src/components/Button1'
 import { Footer } from 'src/components/common/Footer'
 
 const Home = () => (
@@ -43,8 +45,16 @@ const Home = () => (
               </p>
             </div>
             <div className='offer-buttons'>
-              <div className='rental'>Аренда и заказ на дом</div>
-              <div className='catering'>Кальянный кейтеринг</div>
+              <Link href='/arenda-i-dostavka-kalyana-na-dom'>
+                <a>
+                  <Button1>Аренда и заказ на дом</Button1>
+                </a>
+              </Link>
+              <Link href='/kalyannyj-kejtering-v-moskve'>
+                <a>
+                  <Button1 variant='yellow'>Кальянный кейтеринг</Button1>
+                </a>
+              </Link>
             </div>
           </div>
           <div className='social-links'>
@@ -131,13 +141,6 @@ const Home = () => (
 
     <style jsx>{
       /* language=CSS */ `
-        @font-face {
-          font-family: 'nickelodeon-headline';
-          src: url('/assets/fonts/nickelodeon-2001-headline.ttf');
-          font-weight: bold;
-          font-style: normal;
-        }
-
         .container {
           min-height: 100vh;
           display: flex;
@@ -188,7 +191,7 @@ const Home = () => (
           margin-top: 20px;
           font-weight: bold;
           font-size: 20px;
-          font-family: nickelodeon-headline;
+          font-family: 'nickelodeon-headline', sans-serif;
         }
 
         .phone-callback a {
@@ -246,15 +249,6 @@ const Home = () => (
           text-align: center;
           font-size: 18px;
           letter-spacing: 1px;
-        }
-
-        .rental {
-          background: linear-gradient(244.24deg, #42a7f2 -16.97%, #003d6a 134.56%, #1a88db 134.56%);
-        }
-
-        .catering {
-          background: linear-gradient(90deg, #bf841e, #ebad40);
-          background: -moz-linear-gradient(#bf841e, #ebad40);
         }
 
         .social-links {
@@ -319,16 +313,6 @@ const Home = () => (
             width: 100%;
             flex-direction: column;
           }
-        }
-      `
-    }</style>
-
-    <style jsx global>{
-      /* language=CSS */ `
-        html,
-        body {
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
         }
       `
     }</style>

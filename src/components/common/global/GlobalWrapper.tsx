@@ -11,17 +11,16 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
       <style jsx global>{
         /* language=CSS */ `
           /* GLOBAL VARIABLES ----------------------------------------------------------------------------------------------------------------------- */
-
           :root {
             --app-transition: 0.15s all ease-out;
           }
 
           /* GLOBAL STYLES -------------------------------------------------------------------------------------------------------------------------- */
-
-          html,
-          body {
-            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-              sans-serif;
+          @font-face {
+            font-family: 'nickelodeon-headline';
+            src: url('/assets/fonts/nickelodeon-2001-headline.ttf');
+            font-weight: bold;
+            font-style: normal;
           }
 
           #__background {

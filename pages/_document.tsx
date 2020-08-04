@@ -19,6 +19,9 @@ class AppDocument extends Document {
           <meta name='apple-mobile-web-app-status-bar-style' content={appMainColor} />
           <meta name='format-detection' content='telephone=no' />
           <meta name='msapplication-TileColor' content={appMainColor} />
+
+          <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap' />
+          <style dangerouslySetInnerHTML={{ __html: `html { font-family: 'Noto Sans', sans-serif; }` }} />
         </Head>
         <body>
           <div id='__background' />
