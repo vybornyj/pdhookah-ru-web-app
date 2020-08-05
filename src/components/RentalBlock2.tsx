@@ -1,238 +1,243 @@
-import React, { FunctionComponent } from 'react'
+import React, { FunctionComponent, useState } from 'react'
 import { Button1 } from 'src/components/Button1'
+import { RentalBlock2Mode } from 'src/components/RentalBlock2Mode'
+import { RentalBlock2Variants } from 'src/components/RentalBlock2Variants'
+import { useDidUpdate } from 'src/scripts/hooks/useDidUpdate'
 
-export const RentalBlock2: FunctionComponent = () => (
-  <section className='configure'>
-    <div className='container'>
-      <div className='configure-hookah'>
-        <h2>
-          Собери <span>свой кальян:</span>
-        </h2>
-        <div className='order-options'>
-          <div>Кальян</div>
-          <div>Чаща</div>
-          <div>Табак</div>
-          <div>Вкус</div>
-          <div>Дополнительно</div>
-        </div>
-        <div className='hookah-variant'>
-          <div>Классический</div>
-          <div>Дизайнерские</div>
-        </div>
+export const RentalBlock2: FunctionComponent = () => {
+  const [mode, setMode] = useState<rentalMode>('hookah')
+  const [nextMode, setNextMode] = useState<rentalMode>('hookah')
+  const [timeoutID, setTimeoutID] = useState(null)
+  const [visible, setVisible] = useState(true)
+  const [totalPrice, setTotalPrice] = useState(0)
 
-        <div className='order-info'>
-          <h3>При заказе кальяна вы получаете кальянный набор:</h3>
-          <div className='hookah-kit'>
-            <div className='hookah-kit-col'>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Кальян</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Плитка для углей</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Одноразовые мундштуки</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Табак</div>
-              </div>
-            </div>
-            <div className='hookah-kit-col'>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Щипчики</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Угли</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Чаша</div>
-              </div>
-              <div>
-                <img src='/assets/images/hookah-item.jpg' alt='' />
-                <div>
-                  Жидкость на выбор: <br /> молоко, алкоголь коктейль...
+  useDidUpdate(() => {
+    if (timeoutID) clearTimeout(timeoutID)
+
+    setTotalPrice(0)
+    setVisible(false)
+
+    let newTimeoutID = setTimeout(() => {
+      setVisible(true)
+      setMode(nextMode)
+    }, 250)
+    setTimeoutID(newTimeoutID)
+  }, [nextMode])
+
+  return (
+    <>
+      <div className='fixedPrice'>{totalPrice}</div>
+      <section className='configure'>
+        <div className='container'>
+          <div className='configure-hookah'>
+            <h2>
+              Собери <span>свой кальян:</span>
+            </h2>
+
+            <RentalBlock2Mode mode={mode} setMode={setNextMode} />
+
+            <RentalBlock2Variants mode={mode} visible={visible} />
+
+            <div className='order-info'>
+              <h3>ПРИ ЗАКАЗЕ КАЛЬЯНА ВЫ ПОЛУЧАЕТЕ КАЛЬЯННЫЙ НАБОР:</h3>
+              <div className='hookah-kit'>
+                <div className='hookah-kit-col'>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Кальян</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Плитка для углей</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Одноразовые мундштуки</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Табак</div>
+                  </div>
+                </div>
+                <div className='hookah-kit-col'>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Щипчики</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Угли</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Чаша</div>
+                  </div>
+                  <div>
+                    <img src='/assets/images/hookah-item.jpg' alt='' />
+                    <div>
+                      Жидкость на выбор: <br /> молоко, алкоголь коктейль...
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div className='make-call-order'>
-        <div>
-          <h3>Не можете выбрать?</h3>
-          <p>
-            Просто позвоните нам, и мы соберем <br /> для вас кальян!
-          </p>
-          <div className='make-call-order-phone'>
-            <img src='/assets/images/hookah-item.jpg' alt='' />
-            +7 (925) 355-00-53
-          </div>
-        </div>
-        <div className='order-result'>
-          <div className='order-container'>
+          <div className='make-call-order'>
             <div>
-              <span>Заказ на сумму:</span>
-              <span className='price'>5000</span>
+              <h3>НЕ МОЖЕТЕ ВЫБРАТЬ?</h3>
+              <p>
+                Просто позвоните нам, и мы соберем <br /> для вас кальян!
+              </p>
+              <div className='make-call-order-phone'>
+                <img src='/assets/images/hookah-item.jpg' alt='' />
+                +7 (925) 355-00-53
+              </div>
             </div>
-            <Button1>Заказать кальян</Button1>
+            <div className='order-result'>
+              <div className='order-container'>
+                <div>
+                  <span>Заказ на сумму:</span>
+                  <span className='price'>5000</span>
+                </div>
+                <Button1>Открыть корзину</Button1>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+      </section>
 
-    <style jsx>{
-      /* language=CSS */ `
-        section {
-          background: #10131c;
-          margin: auto;
-          width: 1200px;
-        }
+      <style jsx>{
+        /* language=CSS */ `
+          .fixedPrice {
+            position: fixed;
+            right: 60px;
+            bottom: 40px;
+            z-index: 9999;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            background: goldenrod;
+          }
 
-        section.configure {
-          margin-top: 50px;
-          margin-left: 525px;
-          margin-bottom: 100px;
-        }
+          h2,
+          h3 {
+            font-family: 'nickelodeon-headline', sans-serif;
+          }
 
-        section.configure > .container {
-          margin: auto;
-        }
+          h2 {
+            font-weight: bold;
+            font-size: 40px;
+          }
 
-        section.configure h2 {
-          font-weight: bold;
-          font-size: 40px;
-        }
+          h2 > span {
+            color: steelblue;
+          }
 
-        section.configure h2 > span {
-          color: steelblue;
-        }
+          section {
+            background: #10131c;
+            margin: auto;
+            width: 1200px;
+          }
 
-        .configure-hookah {
-          margin: auto;
-          width: 900px;
-          padding: 0 50px;
-        }
+          section.configure {
+            margin-top: 50px;
+            margin-left: 525px;
+            margin-bottom: 100px;
+          }
 
-        .order-options {
-          margin-top: 40px;
-          display: flex;
-        }
+          section.configure > .container {
+            margin: auto;
+          }
 
-        .hookah-kit {
-          display: flex;
-        }
+          .configure-hookah {
+            margin: auto;
+            width: 900px;
+            padding: 0 50px;
+          }
 
-        .hookah-kit-col:nth-child(1) {
-          margin-right: 50px;
-        }
+          .hookah-kit {
+            display: flex;
+          }
 
-        .hookah-kit-col > div {
-          display: flex;
-          align-items: center;
-          margin-bottom: 10px;
-        }
+          .hookah-kit-col:nth-child(1) {
+            margin-right: 50px;
+          }
 
-        .hookah-kit-col > div > img {
-          margin-right: 10px;
-        }
+          .hookah-kit-col > div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+          }
 
-        .hookah-kit > div {
-          display: flex;
-          flex-direction: column;
-          width: 50%;
-        }
+          .hookah-kit-col > div > img {
+            margin-right: 10px;
+          }
 
-        .hookah-kit > div > div {
-          padding: 10px 0;
-        }
+          .hookah-kit > div {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+          }
 
-        .order-options > div {
-          margin-right: 30px;
-          border-radius: 10px;
-          padding: 10px 25px;
-          text-transform: uppercase;
-        }
+          .hookah-kit > div > div {
+            padding: 10px 0;
+          }
 
-        .order-options > div:nth-child(1) {
-          border: 1px solid darkgoldenrod;
-          color: darkgoldenrod;
-        }
+          .order-info {
+            margin-top: 30px;
+          }
 
-        .hookah-variant {
-          margin-top: 30px;
-          display: flex;
-          justify-content: center;
-        }
+          .make-call-order {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+          }
 
-        .hookah-variant > div {
-          width: 150px;
-          height: 250px;
-          background: #16354e;
-          margin: 0 10px;
-          text-align: center;
-        }
+          .make-call-order > div:nth-child(1) {
+            border-right: 1px white solid;
+            padding-right: 60px;
+            margin-left: 50px;
+          }
 
-        .order-info {
-          margin-top: 30px;
-        }
+          .make-call-order h3 {
+            width: 390px;
+            font-size: 28px;
+            margin: 0;
+          }
 
-        .make-call-order {
-          margin-top: 50px;
-          display: flex;
-          justify-content: center;
-        }
+          .make-call-order p {
+            font-size: 18px;
+          }
 
-        .make-call-order > div:nth-child(1) {
-          border-right: 1px white solid;
-          padding-right: 60px;
-          margin-left: 50px;
-        }
+          .make-call-order-phone {
+            font-size: 26px;
+            font-weight: bold;
+          }
 
-        .make-call-order h3 {
-          width: 390px;
-          font-size: 28px;
-          margin: 0;
-        }
+          .make-call-order-phone > img {
+            width: 36px;
+            margin-right: 14px;
+          }
 
-        .make-call-order p {
-          font-size: 18px;
-        }
+          .order-result {
+            margin-left: 50px;
+            display: flex;
+            align-items: center;
+          }
 
-        .make-call-order-phone {
-          font-size: 26px;
-          font-weight: bold;
-        }
+          .order-container {
+          }
 
-        .make-call-order-phone > img {
-          width: 36px;
-          margin-right: 14px;
-        }
+          .order-container > div:nth-child(1) {
+            display: flex;
+            align-items: center;
+          }
 
-        .order-result {
-          margin-left: 50px;
-          display: flex;
-          align-items: center;
-        }
+          .order-container .price {
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 24px;
+          }
 
-        .order-container {
-        }
-
-        .order-container > div:nth-child(1) {
-          display: flex;
-          align-items: center;
-        }
-
-        .order-container .price {
-          margin-left: 20px;
-          font-weight: bold;
-          font-size: 24px;
-        }
-
-        .open-cart {
-          width: 300px;
-          margin-top: 20px;
-        }
-      `
-    }</style>
-  </section>
-)
+          .open-cart {
+            width: 300px;
+            margin-top: 20px;
+          }
+        `
+      }</style>
+    </>
+  )
+}
