@@ -12,8 +12,13 @@ export const Footer: FunctionComponent = () => (
           </a>
         </Link>
       </div>
-      <div>Заказ и аренда кальянов</div>
-      <div>Кальянный кейтеринг</div>
+      <div>
+        <a href='/arenda-i-dostavka-kalyana-na-dom'> Заказ и аренда кальянов</a>
+      </div>
+
+      <div>
+        <a href='/kalyannyj-kejtering-v-moskve'> Кальянный кейтеринг</a>
+      </div>
 
       <div className='footer-phone'>+ 7 (925) 355-00-53</div>
     </div>
@@ -33,6 +38,11 @@ export const Footer: FunctionComponent = () => (
           justify-content: space-between;
           flex-wrap: wrap;
           align-items: flex-end;
+          font-family: Noto Sans, serif;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 12px;
+          line-height: 16px;
         }
 
         footer > div > div:not(.footer-phone) {
@@ -48,8 +58,8 @@ export const Footer: FunctionComponent = () => (
           text-align: right;
 
           margin-top: 20px;
-          font-weight: bold;
-          font-size: 28px;
+          font-size: 20px;
+          font-family: 'nickelodeon-headline', sans-serif;
         }
       `
     }</style>

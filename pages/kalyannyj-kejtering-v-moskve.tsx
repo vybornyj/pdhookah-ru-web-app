@@ -1,9 +1,10 @@
 import { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
+import { Button1 } from 'src/components/Button1'
 import { Footer } from 'src/components/common/Footer'
-import { SvgLogo } from 'src/components/common/SvgLogo'
-import { TempPangram } from 'src/components/TempPangram'
+import { Information } from 'src/components/common/information'
+import { TopLine } from 'src/components/common/TopLine'
+import { SocialLinks } from 'src/components/SocialLinks'
 
 const Page: NextPage = () => (
   <div className='container'>
@@ -13,109 +14,44 @@ const Page: NextPage = () => (
 
     <header>
       <div className='header-wrapper'>
-        <div className='top-line'>
-          <div className='logo'>
-            {' '}
-            <Link href='/'>
-              <a>
-                <SvgLogo />
-              </a>
-            </Link>
-          </div>
-          <div className='logo-text'>
-            <a href='/'>
-              {/* <img src='/images/logo-text.png' alt='logo-text.png' /> */}
-              <div>Кальянный кейтеринг.</div>
-              <div>Заказ и аренда кальянов.</div>
-            </a>
-          </div>
-          <div className='phone'>
-            <div className='phone-number'>
-              <span>+7 (925) 555-44-66</span>
-            </div>
-            <div className='phone-callback'>
-              <a href='#'>Заказать обратный звонок</a>
-            </div>
-          </div>
-        </div>
+        <TopLine />
 
+        <div className='hookah' />
+        <div className='kubik' />
+        <div className='effects1' />
         <div className='offer-wrapper'>
           <div className='offer'>
             <div className='offer-info'>
               <h3 className='offer-title-small'>Hookah services in Moscow</h3>
-              <h2 className='offer-text-large'>Создайте свою атмосферу с нашими кальянами.</h2>
-              <TempPangram />
+              <h2 className='offer-text-large'>
+                Кальянный кейтеринг <br /> <span> в москве.</span>
+              </h2>
+              <p>
+                Мы организуем доставку кальянов на важное для вас событие: свидание, корпоратив, вечеринку, день рождения, свадьбу, пикник и не
+                только. Попробуйте наши кальяны, которые отличаются вкусовыми качествами, разнообразие вкусов позволяет удовлетворить любые ваши
+                желания.
+              </p>
             </div>
             <div className='offer-buttons'>
-              <div>Аренда и заказ на дом</div>
-              <div>Кальянный кейтеринг</div>
+              <a href='#'>
+                <Button1>Заказать кальян</Button1>
+              </a>
             </div>
           </div>
-          <div className='social-links'>
-            <div>
-              <span> Вконтакте </span>
-            </div>
-            <div>
-              <span> Instagram </span>
-            </div>
-            <div>
-              <span> Facebook </span>
-            </div>
-          </div>
+          <SocialLinks />
         </div>
+
+        <div className='hookah' />
       </div>
     </header>
 
     <main>
-      <section>
-        <div>
-          <TempPangram />
-          <h3>Кальяны на дом</h3>
-          <TempPangram />
-          <TempPangram />
-          <ul>
-            <li>профессиональное сопровождение вечера</li>
-            <li>доставка всего необходимого</li>
-            <li>чаши на выбор от глиняных до экзотических фруктов</li>
-            <li>большой выбор топовых табаков и миксов</li>
-          </ul>
-          <TempPangram />
-          <h3>Наши преимущества</h3>
-          <TempPangram />
-          <h3>Кальяны на дом</h3>
-          <TempPangram />
-          <TempPangram />
-          <ul>
-            <li>профессиональное сопровождение вечера</li>
-            <li>доставка всего необходимого</li>
-            <li>чаши на выбор от глиняных до экзотических фруктов</li>
-            <li>большой выбор топовых табаков и миксов</li>
-          </ul>
-
-          <TempPangram />
-          <h3>Кальяны на дом</h3>
-          <TempPangram />
-          <TempPangram />
-        </div>
-      </section>
+      <Information />
     </main>
-
     <Footer />
 
     <style jsx>{
       /* language=CSS */ `
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          margin: auto;
-          width: 1200px;
-        }
-
         h1,
         h2,
         h3,
@@ -123,82 +59,13 @@ const Page: NextPage = () => (
           text-transform: uppercase;
         }
 
-        .top-line {
-          display: flex;
-        }
-
-        .logo {
-          flex: 1;
-        }
-
-        .logo-text {
-          flex: 3;
-        }
-
-        .phone {
-          flex: 1;
-        }
-
-        .phone-number > a {
-          font-weight: bold;
-          font-size: 30px;
-        }
-
-        .offer-wrapper {
-          position: relative;
-        }
-
-        .offer {
-          margin-left: 280px;
-        }
-
-        .offer-title-small {
-          text-transform: uppercase;
-        }
-
-        .offer-text-large {
-          text-transform: uppercase;
-          font-size: 70px;
-          line-height: 86px;
-          margin: 0 0 26px;
-        }
-
-        .offer-info {
-          margin-top: 100px;
-        }
-
-        .offer-buttons > div {
-          text-transform: uppercase;
-          display: inline-block;
-          line-height: 64px;
-          border: 2px solid goldenrod;
-          border-radius: 35px;
-          margin-right: 20px;
-          width: 270px;
-          text-align: center;
-          font-size: 14px;
-        }
-
-        .social-links {
+        .hookah {
+          background: url('/assets/images/catering/hookah.png');
           position: absolute;
-          top: 15px;
-          left: 15px;
-        }
-
-        .social-links > div {
-          transform: rotate(-90deg);
-          margin-bottom: 90px;
-        }
-
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-
-          margin-left: 280px;
+          width: 443.06px;
+          height: 754.72px;
+          left: 1256.5px;
+          top: 174px;
         }
 
         main > section h3 {

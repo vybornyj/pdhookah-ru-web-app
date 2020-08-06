@@ -76,6 +76,200 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             padding: 18px 0;
             margin: 0;
           }
+          main {
+            margin-top: -10px;
+            width: 100%;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+
+          section {
+            margin: auto;
+            width: 1200px;
+          }
+
+          .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            background: #10131b;
+          }
+
+          header {
+            background: url('/assets/images/main/layer1.png') no-repeat;
+            width: 100%;
+          }
+
+          .header-wrapper {
+            margin: auto;
+            width: 1200px;
+          }
+
+          .effects1 {
+            background: url('/assets/images/isky.png');
+            position: absolute;
+            width: 1435px;
+            height: 959px;
+            left: -823px;
+            top: -104px;
+            filter: blur(10px);
+          }
+
+          .kubik {
+            position: absolute;
+            width: 179px;
+            height: 176px;
+            left: 83px;
+            top: 75px;
+            background: url('/assets/images/kubik-main.png') center;
+            transform: matrix(-0.81, -0.59, -0.59, 0.81, 0, 0);
+          }
+
+          .top-line {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            text-align: center;
+            z-index: 2;
+            position: relative;
+          }
+
+          .logo-text {
+            margin-top: -30px;
+
+            font-family: Noto Sans, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: center;
+          }
+
+          .top-line .phone {
+            margin-right: 20px;
+          }
+
+          .phone-number {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 20px;
+            font-family: 'nickelodeon-headline', sans-serif;
+          }
+
+          .phone-callback a {
+            text-decoration: underline;
+            color: #f5f5f5;
+            font-size: 14px;
+          }
+
+          .offer-wrapper {
+            position: relative;
+            width: 1200px;
+            margin-bottom: 200px;
+          }
+
+          .offer {
+            padding: 10px;
+            z-index: 10;
+          }
+
+          .offer-info > h3 {
+            font-size: 22px;
+            font-weight: normal;
+          }
+
+          .offer-info > p {
+            width: 500px;
+            padding: 0;
+            font-size: 14px;
+          }
+
+          .offer ul {
+            list-style-image: url('/assets/images/main/bullet.png');
+            padding-left: 20px;
+            margin: 10px 0;
+          }
+
+          .offer li {
+            margin: 10px 0;
+          }
+
+          .offer-text-large {
+            text-transform: uppercase;
+            font-size: 61px;
+            line-height: 74px;
+            margin: 0 0 26px;
+
+            font-weight: bold;
+            font-family: 'nickelodeon-headline', sans-serif;
+          }
+
+          .offer-text-large > span {
+            color: steelblue;
+          }
+
+          .offer-buttons {
+            margin-top: 100px;
+          }
+
+          .offer-buttons > div {
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 69px;
+            /*border: 2px solid goldenrod;*/
+            box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.4);
+            border-radius: 12px;
+            margin-right: 40px;
+            width: 330px;
+            text-align: center;
+            font-size: 18px;
+            letter-spacing: 1px;
+          }
+
+          .social-links {
+            position: absolute;
+            top: 55px;
+            left: -125px;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+
+          .social-links > div {
+            height: 120px;
+            transform: rotate(-90deg);
+            margin-bottom: 90px;
+          }
+
+          .social-links > div > img {
+            transform: rotate(90deg);
+          }
+
+          .social-links > div > span {
+            margin-left: 20px;
+          }
+
+          .social-item {
+            position: relative;
+          }
+
+          .social-item .img-wrap {
+            width: 36px;
+            height: 36px;
+            top: 0;
+            left: 0;
+            margin-left: -5px;
+            border-radius: 18px;
+            position: absolute;
+            /*background: linear-gradient(261.22deg, #ffbf50 -31.06%, #b67b16 115.79%);*/
+          }
 
           /* GLOBAL HELPERS ------------------------------------------------------------------------------------------------------------------------- */
 
