@@ -70,7 +70,7 @@ export const MakeCallOrder = () => {
             font-size: 40px;
 
             line-height: 56px;
-            font-family: 'Nickelodeon 2001 Headline', sans-serif;
+            font-family: var(--app-font-alt);
           }
 
           .home-order span,
@@ -136,7 +136,7 @@ export const MakeCallOrder = () => {
           }
 
           .reasons-to-order h2 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-size: 40px;
             line-height: 56px;
             margin-bottom: 50px;
@@ -154,7 +154,7 @@ export const MakeCallOrder = () => {
           }
 
           .reasons-list-item > span {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             /* identical to box height */
@@ -199,7 +199,7 @@ export const MakeCallOrder = () => {
             font-size: 14px;
             line-height: 22px;
             padding-top: 0;
-            font-family: Noto Sans, serif;
+            font-family: var(--app-font);
           }
 
           .reasons-benefits > div {
@@ -242,7 +242,7 @@ export const MakeCallOrder = () => {
           }
 
           .make-call-order h3 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 24px;
@@ -252,7 +252,7 @@ export const MakeCallOrder = () => {
           }
 
           .make-call-order p {
-            font-family: Noto Sans, serif;
+            font-family: var(--app-font);
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -263,7 +263,7 @@ export const MakeCallOrder = () => {
           }
 
           .make-call-order-phone {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 36px;

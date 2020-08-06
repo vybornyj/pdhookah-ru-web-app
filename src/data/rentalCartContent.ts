@@ -1,4 +1,8 @@
-export const modes: { [name: string]: { title: string; price: number; image: string; imageTop: number; imageLeft: number }[] } = {
+interface rentalCartContent {
+  [name: string]: { title: string; price: number; image: string; imageTop: number; imageLeft: number }[]
+}
+
+export const rentalCartContent: rentalCartContent = {
   hookah: [
     {
       title: 'Классический',

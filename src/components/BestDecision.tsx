@@ -32,7 +32,7 @@ export const BestDecision = () => {
           }
 
           .best-decision h2 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 40px;
@@ -58,7 +58,7 @@ export const BestDecision = () => {
           }
 
           .best-decision h3 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 24px;

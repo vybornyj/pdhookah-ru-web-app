@@ -1,13 +1,13 @@
 import React, { FunctionComponent, useState } from 'react'
 import { Button1 } from 'src/components/Button1'
-import { RentalBlock2Mode } from 'src/components/RentalBlock2Mode'
-import { RentalBlock2Variants } from 'src/components/RentalBlock2Variants'
+import { RentalBlock2Mode } from 'src/components/rental-block-2/RentalBlock2Mode'
+import { RentalBlock2Variants } from 'src/components/rental-block-2/RentalBlock2Variants'
 import { useDidUpdate } from 'src/scripts/hooks/useDidUpdate'
 
 export const RentalBlock2: FunctionComponent = () => {
   const [mode, setMode] = useState<rentalMode>('hookah')
   const [nextMode, setNextMode] = useState<rentalMode>('hookah')
-  const [timeoutID, setTimeoutID] = useState(null)
+  const [timeoutID, setTimeoutID] = useState(0)
   const [visible, setVisible] = useState(true)
   const [totalPrice, setTotalPrice] = useState(0)
 
@@ -21,12 +21,11 @@ export const RentalBlock2: FunctionComponent = () => {
       setVisible(true)
       setMode(nextMode)
     }, 250)
-    setTimeoutID(newTimeoutID)
+    setTimeoutID(Number(newTimeoutID))
   }, [nextMode])
 
   return (
     <>
-      <div className='fixedPrice'>{totalPrice}</div>
       <section className='configure'>
         <div className='container'>
           <div className='configure-hookah'>
@@ -114,7 +113,7 @@ export const RentalBlock2: FunctionComponent = () => {
 
           h2,
           h3 {
-            font-family: 'nickelodeon-headline', sans-serif;
+            font-family: var(--app-font-alt);
           }
 
           h2 {

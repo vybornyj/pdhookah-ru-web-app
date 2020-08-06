@@ -1,48 +1,37 @@
-import React, { FunctionComponent, useRef, useState } from 'react'
-import { FlyingImage } from 'src/components/FlyingImage'
+import React, { FunctionComponent, useRef } from 'react'
+import { FlyingImage2 } from 'src/components/rental-block-2/flyingImage'
 
 interface props {
   title: string
   price: number
   image: string
-  imageTop?: number
-  imageLeft?: number
+  imageTop: number
+  imageLeft: number
+  addToCart: () => void
 }
 
-export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, image, imageTop = 0, imageLeft = 0 }) => {
+export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, image, imageTop = 0, imageLeft = 0, addToCart }) => {
   const imgRef = useRef()
-  const [fly, setFly] = useState({ top: 0, left: 0, width: 0, height: 0 })
-  const [timeoutID, setTimeoutID] = useState(null)
-  const [visible, setVisible] = useState(true)
 
   const onClick = () => {
     // @ts-ignore
-    const { top, left, width, height } = imgRef?.current?.getBoundingClientRect()
-    setFly({ top, left, width, height })
-    setVisible(false)
-
-    if (timeoutID) clearTimeout(timeoutID)
-
-    let newTimeoutID = setTimeout(() => {
-      setVisible(true)
-      setFly({ top: document.documentElement.offsetHeight - 80, left: document.documentElement.offsetWidth - 100, width: 0, height: 0 })
-    }, 100)
-    setTimeoutID(newTimeoutID)
+    FlyingImage2(image, imgRef?.current?.getBoundingClientRect())
+    addToCart()
   }
 
   return (
     <div className='variant global-column'>
-      <FlyingImage image={image} fly={fly} visible={visible} />
       <div className='price'>{price} руб</div>
       <div className='circle'>
         <div className='circle2' />
-        <img src={image} alt={title} ref={imgRef} />
+        {/* @ts-ignore */}
+        <img className='img1' src={image} alt={title} ref={imgRef} />
       </div>
       <div className='title'>{title}</div>
 
       <div className='global-flex-1-0' />
       <div className='add' onClick={onClick}>
-        add
+        <img className='img2' src='/assets/icons/cart-15-15.png' alt='' />
       </div>
       <style jsx>{
         /* language=CSS */ `
@@ -61,7 +50,7 @@ export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, im
             font-size: 14px;
             padding: 4px 0;
 
-            font-family: 'nickelodeon-headline', sans-serif;
+            font-family: var(--app-font-alt);
             width: 100px;
             background: var(--app-gradient-gold);
             border-radius: 5px;
@@ -89,7 +78,7 @@ export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, im
             box-shadow: 0 0 3px 0 hsl(0, 0%, 100%);
           }
 
-          img {
+          .img1 {
             z-index: 1;
             position: absolute;
             top: ${imageTop}px;
@@ -107,13 +96,20 @@ export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, im
             width: 45px;
             height: 25px;
             border-radius: 5px;
-            box-shadow: 0 0 2px 1px darkgoldenrod;
+            box-shadow: 0 0 1px 1px darkgoldenrod;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 
           .add:hover {
             color: white;
             background: darkgoldenrod;
+          }
+
+          .add:hover .img2 {
+            filter: brightness(0) invert(1);
           }
         `
       }</style>

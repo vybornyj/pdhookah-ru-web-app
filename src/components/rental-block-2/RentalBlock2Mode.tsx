@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react'
-import { modes } from 'src/components/RentalBlock2ModeData'
+import { rentalModes } from 'src/data/rentalModes'
 
 interface props {
   mode: rentalMode
@@ -9,7 +9,7 @@ interface props {
 export const RentalBlock2Mode: FunctionComponent<props> = ({ mode: currentMode, setMode }) => {
   return (
     <div className='modes'>
-      {modes.map(({ mode, title }) => (
+      {rentalModes.map(({ mode, title }) => (
         <div onClick={() => setMode(mode)} className={String(mode === currentMode)} key={mode}>
           {title}
         </div>

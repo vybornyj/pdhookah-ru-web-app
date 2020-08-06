@@ -1,4 +1,6 @@
-export const modes: { mode: rentalMode; title: string }[] = [
+type rentalModes = { mode: rentalMode; title: string }[]
+
+export const rentalModes: rentalModes = [
   {
     mode: 'hookah',
     title: 'Кальян'

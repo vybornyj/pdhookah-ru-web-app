@@ -71,7 +71,7 @@ export const DoItYourself = () => {
           }
 
           .make-call-order h3 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 35px;
@@ -80,7 +80,7 @@ export const DoItYourself = () => {
           }
 
           .make-call-order p {
-            font-family: Noto Sans, serif;
+            font-family: var(--app-font);
             font-style: normal;
             font-weight: normal;
             font-size: 16px;
@@ -91,7 +91,7 @@ export const DoItYourself = () => {
           }
 
           .make-call-order-phone {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 36px;
@@ -114,7 +114,7 @@ export const DoItYourself = () => {
             margin-bottom: 30px;
           }
           .order-container > div > span {
-            font-family: Noto Sans, serif;
+            font-family: var(--app-font);
             font-style: normal;
             font-weight: normal;
             font-size: 24px;

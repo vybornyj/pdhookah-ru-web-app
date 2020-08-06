@@ -38,7 +38,7 @@ export const Footer: FunctionComponent = () => (
           justify-content: space-between;
           flex-wrap: wrap;
           align-items: flex-end;
-          font-family: Noto Sans, serif;
+          font-family: var(--app-font);
           font-style: normal;
           font-weight: normal;
           font-size: 12px;
@@ -59,7 +59,7 @@ export const Footer: FunctionComponent = () => (
 
           margin-top: 20px;
           font-size: 20px;
-          font-family: 'nickelodeon-headline', sans-serif;
+          font-family: var(--app-font-alt);
         }
       `
     }</style>

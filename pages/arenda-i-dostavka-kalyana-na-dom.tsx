@@ -8,7 +8,7 @@ import { Information } from 'src/components/common/information'
 import { TopLine } from 'src/components/common/TopLine'
 import { MakeCallOrder } from 'src/components/MakeCallOrder'
 import { OurBenifits } from 'src/components/OurBenefits'
-import { RentalBlock2 } from 'src/components/RentalBlock2'
+import { RentalBlock2 } from 'src/components/rental-block-2/RentalBlock2'
 import { SocialLinks } from 'src/components/SocialLinks'
 
 const Page: NextPage = () => (
@@ -219,7 +219,7 @@ const Page: NextPage = () => (
           font-size: 40px;
 
           line-height: 56px;
-          font-family: 'Nickelodeon 2001 Headline', sans-serif;
+          font-family: var(--app-font-alt);
         }
 
         .home-order span,
@@ -285,7 +285,7 @@ const Page: NextPage = () => (
         }
 
         .reasons-to-order h2 {
-          font-family: 'Nickelodeon 2001 Headline', serif;
+          font-family: var(--app-font-alt);
           font-size: 40px;
           line-height: 56px;
           margin-bottom: 50px;
@@ -303,7 +303,7 @@ const Page: NextPage = () => (
         }
 
         .reasons-list-item > span {
-          font-family: 'Nickelodeon 2001 Headline', serif;
+          font-family: var(--app-font-alt);
           font-style: normal;
           font-weight: normal;
           /* identical to box height */
@@ -348,7 +348,7 @@ const Page: NextPage = () => (
           font-size: 14px;
           line-height: 22px;
           padding-top: 0;
-          font-family: Noto Sans, serif;
+          font-family: var(--app-font);
         }
 
         .reasons-benefits > div {
@@ -391,7 +391,7 @@ const Page: NextPage = () => (
         }
 
         .make-call-order h3 {
-          font-family: 'Nickelodeon 2001 Headline', serif;
+          font-family: var(--app-font-alt);
           font-style: normal;
           font-weight: normal;
           font-size: 24px;
@@ -401,7 +401,7 @@ const Page: NextPage = () => (
         }
 
         .make-call-order p {
-          font-family: Noto Sans, serif;
+          font-family: var(--app-font);
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -412,7 +412,7 @@ const Page: NextPage = () => (
         }
 
         .make-call-order-phone {
-          font-family: 'Nickelodeon 2001 Headline', serif;
+          font-family: var(--app-font-alt);
           font-style: normal;
           font-weight: normal;
           font-size: 36px;

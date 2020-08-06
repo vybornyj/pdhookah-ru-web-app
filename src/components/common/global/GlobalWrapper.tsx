@@ -14,6 +14,8 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
           :root {
             --app-transition: 0.15s all ease-out;
             --app-gradient-gold: linear-gradient(240deg, hsl(38, 100%, 66%) -30%, hsl(38, 78%, 40%) 115%);
+            --app-font: 'Noto Sans', serif;
+            --app-font-alt: 'nickelodeon-headline', sans-serif;
           }
 
           /* GLOBAL STYLES -------------------------------------------------------------------------------------------------------------------------- */
@@ -145,7 +147,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
           .logo-text {
             margin-top: -30px;
 
-            font-family: Noto Sans, serif;
+            font-family: var(--app-font);
             font-style: normal;
             font-weight: normal;
             font-size: 12px;
@@ -161,7 +163,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             margin-top: 20px;
             font-weight: bold;
             font-size: 20px;
-            font-family: 'nickelodeon-headline', sans-serif;
+            font-family: var(--app-font-alt);
           }
 
           .phone-callback a {
@@ -209,7 +211,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             margin: 0 0 26px;
 
             font-weight: bold;
-            font-family: 'nickelodeon-headline', sans-serif;
+            font-family: var(--app-font-alt);
           }
 
           .offer-text-large > span {

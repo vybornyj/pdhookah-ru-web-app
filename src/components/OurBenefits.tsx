@@ -41,7 +41,7 @@ export const OurBenifits = () => {
           }
 
           .our-benefits h2 {
-            font-family: 'Nickelodeon 2001 Headline', serif;
+            font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
             font-size: 40px;
