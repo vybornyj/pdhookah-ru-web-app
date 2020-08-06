@@ -13,7 +13,6 @@
     "skipLibCheck": true, // Skip type checking of all declaration files (*.d.ts)
     "noEmit": true, // Do not emit outputs
     "sourceMap": true, // Generates corresponding .map file
-    "inlineSourceMap": true, // Emit a single file with source maps instead of having a separate file
     "removeComments": true, // Remove all comments except copy-right header comments beginning with /*!
     "declaration": true, // Generates corresponding .d.ts file.
     "allowJs": true, // Allow JavaScript files to be compiled
