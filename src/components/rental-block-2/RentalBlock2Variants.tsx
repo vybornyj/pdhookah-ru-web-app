@@ -1,5 +1,7 @@
 import React, { FunctionComponent, useEffect, useState } from 'react'
+import { AppModal } from 'src/components/common/modals/AppModal'
 import { FixedCartButton } from 'src/components/rental-block-2/FixedCartButton'
+import { ModalCart } from 'src/components/rental-block-2/ModalCart'
 import { RentalBlock2Variant } from 'src/components/rental-block-2/RentalBlock2Variant'
 import { rentalCartContent } from 'src/data/rentalCartContent'
 
@@ -11,6 +13,8 @@ interface props {
 export const RentalBlock2Variants: FunctionComponent<props> = ({ mode, visible }) => {
   const [cart, setCart] = useState<{ [name: string]: number }>({})
   const [totalPrice, setTotalPrice] = useState(0)
+  const [cartIsOpen, setCartIsOpen] = useState(false)
+
   const addToCart = (mode: string, key: number) => {
     const id = [mode, key].join('--')
     let newCart = { ...cart }
@@ -30,7 +34,10 @@ export const RentalBlock2Variants: FunctionComponent<props> = ({ mode, visible }
 
   return (
     <div className={`${String(visible)}`}>
-      <FixedCartButton totalPrice={totalPrice} />
+      <AppModal isOpen={cartIsOpen} closing={() => setCartIsOpen(false)}>
+        <ModalCart cart={cart} />
+      </AppModal>
+      <FixedCartButton totalPrice={totalPrice} onClick={() => setCartIsOpen(true)} />
       {rentalCartContent[mode].map((props, key) => (
         <RentalBlock2Variant {...props} addToCart={() => addToCart(mode, key)} key={props.title} />
       ))}

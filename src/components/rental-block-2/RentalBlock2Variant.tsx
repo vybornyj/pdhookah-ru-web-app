@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useRef } from 'react'
-import { FlyingImage2 } from 'src/components/rental-block-2/flyingImage'
+import { flyingImage } from 'src/components/rental-block-2/flyingImage'
 
 interface props {
   title: string
@@ -15,7 +15,7 @@ export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, im
 
   const onClick = () => {
     // @ts-ignore
-    FlyingImage2(image, imgRef?.current?.getBoundingClientRect())
+    flyingImage(image, imgRef?.current?.getBoundingClientRect())
     addToCart()
   }
 

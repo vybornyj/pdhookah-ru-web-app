@@ -6,7 +6,7 @@ export const GlobalAlertPopup: FunctionComponent = () => {
   const [storeAlertPopup] = useGlobal('storeAlertPopup')
   const STORE_SET_ALERT_POPUP = useDispatch('STORE_SET_ALERT_POPUP')
 
-  const [timeoutID, setTimeoutID] = useState<ReturnType<typeof setTimeout>>(null)
+  const [timeoutID, setTimeoutID] = useState<ReturnType<typeof setTimeout>>()
 
   useDidUpdate(() => {
     if (timeoutID) clearTimeout(timeoutID)

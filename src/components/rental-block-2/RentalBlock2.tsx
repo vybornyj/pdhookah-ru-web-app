@@ -125,12 +125,6 @@ export const RentalBlock2: FunctionComponent = () => {
             color: steelblue;
           }
 
-          section {
-            background: #10131c;
-            margin: auto;
-            width: 1200px;
-          }
-
           section.configure {
             margin-top: 50px;
             margin-left: 525px;

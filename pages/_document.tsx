@@ -1,7 +1,7 @@
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 class AppDocument extends Document {
-  public static getInitialProps = async ctx => await Document.getInitialProps(ctx)
+  public static getInitialProps = async (ctx: any) => await Document.getInitialProps(ctx)
 
   public render = () => {
     const appName = 'Кальяны МСК'

@@ -1,4 +1,4 @@
-type FlyingImage = (
+type flyingImage = (
   image: string,
   coords: {
     top: number
@@ -9,7 +9,7 @@ type FlyingImage = (
   }
 ) => void
 
-export const FlyingImage2: FlyingImage = (image, { top, left, width, height }) => {
+export const flyingImage: flyingImage = (image, { top, left, width, height }) => {
   const id = String(new Date().getTime())
 
   const el = document.createElement('img')
@@ -26,17 +26,13 @@ export const FlyingImage2: FlyingImage = (image, { top, left, width, height }) =
   document.body.appendChild(el)
 
   setTimeout(() => {
-    const el = document.getElementById(id)
-    if (el) {
-      el.style.top = `${document.documentElement.offsetHeight - 105}px`
-      el.style.left = `${document.documentElement.offsetWidth - 125}px`
-      el.style.width = '50px'
-      el.style.height = '50px'
-    }
+    el.style.top = `${document.documentElement.offsetHeight - 105}px`
+    el.style.left = `${document.documentElement.offsetWidth - 125}px`
+    el.style.width = '50px'
+    el.style.height = '50px'
   }, 10)
 
   setTimeout(() => {
-    const el = document.getElementById(id)
-    if (el) document.body.removeChild(el)
+    el.remove()
   }, 760)
 }
