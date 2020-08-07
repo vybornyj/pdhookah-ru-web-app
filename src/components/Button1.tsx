@@ -16,8 +16,8 @@ export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue' }
             line-height: 70px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
-            margin-right: 40px;
-            width: 335px;
+            padding: 0 40px;
+            min-width: 330px;
             text-align: center;
             font-size: 18px;
             letter-spacing: 1px;

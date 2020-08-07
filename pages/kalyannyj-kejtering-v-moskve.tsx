@@ -5,6 +5,13 @@ import { Footer } from 'src/components/common/Footer'
 import { Information } from 'src/components/common/information'
 import { TopLine } from 'src/components/common/TopLine'
 import { SocialLinks } from 'src/components/SocialLinks'
+import { HookahCatering } from 'src/components/catering/HookahCatering'
+import { DeliveryHookahs } from 'src/components/DeliveryHookahs'
+import { BenefitsWork } from 'src/components/rent/BenifitsWork'
+import { AreaDecoration } from 'src/components/catering/AreaDecoration'
+import { EventOrganize } from 'src/components/catering/EventOrganize'
+import { CateringOrder } from 'src/components/catering/CateringOrder'
+import { EventCalculate } from 'src/components/catering/EventCalculate'
 
 const Page: NextPage = () => (
   <div className='container'>
@@ -26,11 +33,15 @@ const Page: NextPage = () => (
               <h2 className='offer-text-large'>
                 Кальянный кейтеринг <br /> <span> в москве.</span>
               </h2>
-              <p>
-                Мы организуем доставку кальянов на важное для вас событие: свидание, корпоратив, вечеринку, день рождения, свадьбу, пикник и не
-                только. Попробуйте наши кальяны, которые отличаются вкусовыми качествами, разнообразие вкусов позволяет удовлетворить любые ваши
-                желания.
-              </p>
+              <h4>Готовые кальяны круглосуточно, с бесплатной доставкой в любую точку столицы</h4>
+              <ul>
+                <li>
+                  95% доставок занимают <b>менее 90 мин.</b>
+                </li>
+                <li>Забираем кальян на следующий день.</li>
+                <li>Большой парк кальянов.</li>
+                <li>Все популярные табаки и топовые вкусы.</li>
+              </ul>
             </div>
             <div className='offer-buttons'>
               <a href='#'>
@@ -46,6 +57,19 @@ const Page: NextPage = () => (
     </header>
 
     <main>
+      <HookahCatering />
+
+      <EventCalculate />
+
+      <CateringOrder />
+
+      <EventOrganize />
+
+      <AreaDecoration />
+
+      <BenefitsWork />
+      <DeliveryHookahs />
+
       <Information />
     </main>
     <Footer />

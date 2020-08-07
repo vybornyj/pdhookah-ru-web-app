@@ -1,18 +1,15 @@
 import { Button1 } from 'src/components/Button1'
 
-export const MakeCallOrder = () => {
+export const CateringOrder = () => {
   return (
     <>
       <section>
         <div className='make-call-order'>
           <div>
-            <h3>Доставка кальянов на дом (Москва) круглосуточно.</h3>
+            <h3>заказ кальянного кейтеринга</h3>
             <p>
-              Круглосуточная доставка кальянов на дом в течение <span>90 минут</span>
-            </p>
-            <p>
-              Доставка осуществляется по Москве в любое удобное для вас время. <br /> Вы можете заказать кальян с любым вкусом: кислый, сладкий,
-              свежий.
+              Для заказа кальянного кейтеринга позвоните нам по указанному на сайте телефону. Исходя из количества гостей на планируемом мероприятии,
+              его формата, возрастной категории и прочих факторов, мы дадим вам рекомендации по тому, что именно выбрать и в каком количестве.
             </p>
             <div className='make-call-order-phone'>
               <img src='/assets/images/rent/callphone-icon.png' alt='' />+ 7 (925) 355-00-53
@@ -37,6 +34,7 @@ export const MakeCallOrder = () => {
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0 20px;
           }
 
           .make-call-order > div:nth-child(1) {

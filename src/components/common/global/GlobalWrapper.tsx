@@ -176,16 +176,20 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             position: relative;
             width: 1200px;
             margin-bottom: 200px;
+            margin-top: 38px;
           }
 
           .offer {
-            padding: 10px;
+            padding: 0 10px;
             z-index: 10;
           }
 
           .offer-info > h3 {
-            font-size: 22px;
+            font-family: Noto Sans;
+            font-style: normal;
             font-weight: normal;
+            font-size: 24px;
+            line-height: 33px;
           }
 
           .offer-info > p {
@@ -201,14 +205,14 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
           }
 
           .offer li {
-            margin: 10px 0;
+            margin: 15px 0;
           }
 
           .offer-text-large {
             text-transform: uppercase;
             font-size: 61px;
             line-height: 74px;
-            margin: 0 0 26px;
+            margin: 0 0 40px;
 
             font-weight: bold;
             font-family: var(--app-font-alt);
@@ -222,32 +226,26 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             margin-top: 100px;
           }
 
-          .offer-buttons > div {
-            text-transform: uppercase;
-            display: inline-block;
-            line-height: 69px;
-            /*border: 2px solid goldenrod;*/
-            box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.4);
-            border-radius: 12px;
+          .offer-buttons > a {
             margin-right: 40px;
-            width: 330px;
-            text-align: center;
-            font-size: 18px;
-            letter-spacing: 1px;
           }
 
           .social-links {
             position: absolute;
-            top: 55px;
-            left: -125px;
+            top: 20px;
+            left: -115px;
             text-transform: uppercase;
-            font-size: 20px;
+            font-family: Noto Sans, serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
           }
 
           .social-links > div {
             height: 120px;
             transform: rotate(-90deg);
-            margin-bottom: 90px;
+            margin-bottom: 103px;
           }
 
           .social-links > div > img {

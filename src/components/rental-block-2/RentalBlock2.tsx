@@ -89,7 +89,7 @@ export const RentalBlock2: FunctionComponent = () => {
               <div className='order-container'>
                 <div>
                   <span>Заказ на сумму:</span>
-                  <span className='price'>5000</span>
+                  <span className='price'>{totalPrice}</span>
                 </div>
                 <Button1>Открыть корзину</Button1>
               </div>

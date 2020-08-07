@@ -185,7 +185,7 @@ export const Information = () => {
           section.information {
             margin-top: 80px;
             margin-bottom: 200px;
-            padding: 10px;
+            padding: 0 20px;
           }
 
           section.information h2 {
@@ -207,6 +207,16 @@ export const Information = () => {
 
           .payments img {
             margin-right: 50px;
+          }
+
+          ul {
+            list-style-image: url(/assets/images/main/bullet.png);
+            padding-left: 20px;
+            margin: 10px 0;
+          }
+
+          li {
+            margin: 10px 0;
           }
         `
       }</style>

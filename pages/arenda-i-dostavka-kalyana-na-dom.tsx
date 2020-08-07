@@ -10,6 +10,8 @@ import { MakeCallOrder } from 'src/components/MakeCallOrder'
 import { OurBenifits } from 'src/components/OurBenefits'
 import { RentalBlock2 } from 'src/components/rental-block-2/RentalBlock2'
 import { SocialLinks } from 'src/components/SocialLinks'
+import { HowItWorks } from 'src/components/common/HowItWorks'
+import { ReasonsToOrder } from 'src/components/catering/ReasonsToOrder'
 
 const Page: NextPage = () => (
   <div className='container'>
@@ -105,66 +107,7 @@ const Page: NextPage = () => (
         </div>
       </section>
 
-      <section className='reasons-to-order'>
-        <div className='reasons-to-order-container'>
-          <h2>
-            <span>8 причин заказать</span>
-            <br /> готовый кальян у нас:
-          </h2>
-          <div className='reasons-list'>
-            <div>
-              <div className='reasons-list-item'>
-                <span className='twelve'>12</span>
-                <p>
-                  лет работы <br /> с кальянами
-                </p>
-              </div>
-              <div className='reasons-list-item'>
-                <span className='thousand'>1000+</span>
-                <p>
-                  Довольных <br /> клиентов
-                </p>
-              </div>
-              <div className='reasons-list-item'>
-                <span className='kinds'>12+</span>
-                <p>
-                  Видов табака <br /> для кальянов
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className='reasons-list-item'>
-                <span className='five-ages'>5</span>
-                <p>
-                  Лет минимальный <br />
-                  стаж работы кальянщиков
-                </p>
-              </div>
-              <div className='reasons-list-item'>
-                <span className='percents'>100%</span>
-                <p>
-                  Гарантия высшего качества <br /> продуктов табакокурения
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div className='reasons-benefits'>
-            <div>
-              <img src='/assets/images/rent/tabacco.png' alt='' />
-              <div>
-                Работаем с топовыми табаками, которые можно покурить только в специализированных кальянных (их нет в свободной розничной продаже).
-              </div>
-            </div>
-            <div>
-              <img src='/assets/images/rent/clock.png' alt='' /> <div> Доставка занимает в среднем 90 мин.</div>
-            </div>
-            <div>
-              <img src='/assets/images/rent/shield.png' alt='' /> <div> Повышенный клиентский сервис.</div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ReasonsToOrder />
 
       <MakeCallOrder />
 
@@ -172,6 +115,7 @@ const Page: NextPage = () => (
 
       <OurBenifits />
       <DoItYourself />
+      <HowItWorks />
 
       <Information />
     </main>
@@ -214,16 +158,14 @@ const Page: NextPage = () => (
           margin: auto;
         }
 
-        .home-order h2,
-        .reasons-to-order h2 {
+        .home-order h2 {
           font-size: 40px;
 
           line-height: 56px;
           font-family: var(--app-font-alt);
         }
 
-        .home-order span,
-        .reasons-to-order span {
+        .home-order span {
           color: steelblue;
         }
 
@@ -239,12 +181,10 @@ const Page: NextPage = () => (
         }
 
         .home-order-list-item-circle {
-          box-sizing: content-box;
-          border: 2px dashed #f5f5f5;
-          border-radius: 90px;
-
-          width: 164px;
-          height: 164px;
+          display: inline-block;
+          background: url('/assets/images/rent/ellipse.png') no-repeat center;
+          width: 166px;
+          height: 166px;
         }
 
         .home-order-list-item > div > div {
@@ -273,97 +213,6 @@ const Page: NextPage = () => (
           line-height: 18px;
         }
 
-        /* REASONS TO ORDER */
-
-        .reasons-to-order {
-          width: 100%;
-        }
-
-        .reasons-to-order-container {
-          margin: auto;
-          width: 1200px;
-        }
-
-        .reasons-to-order h2 {
-          font-family: var(--app-font-alt);
-          font-size: 40px;
-          line-height: 56px;
-          margin-bottom: 50px;
-        }
-
-        .reasons-list > div {
-          display: flex;
-          flex-direction: row;
-          text-transform: uppercase;
-          margin-bottom: 40px;
-        }
-
-        .reasons-list-item {
-          width: 250px;
-        }
-
-        .reasons-list-item > span {
-          font-family: var(--app-font-alt);
-          font-style: normal;
-          font-weight: normal;
-          /* identical to box height */
-          color: #ffff00;
-          background: linear-gradient(248.56deg, #ffbf50 -31.06%, #b67b16 115.79%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-        }
-
-        span.twelve {
-          display: inline-block;
-          height: 40px;
-          font-size: 33px;
-          line-height: 46px;
-        }
-        span.thousand {
-          display: inline-block;
-          height: 40px;
-          font-size: 34px;
-          line-height: 48px;
-        }
-        span.kinds {
-          display: inline-block;
-          height: 40px;
-          font-size: 32px;
-          line-height: 45px;
-        }
-        span.five-ages {
-          display: inline-block;
-          height: 56px;
-          font-size: 46px;
-          line-height: 56px;
-        }
-        span.percents {
-          display: inline-block;
-          height: 50px;
-          font-size: 33px;
-          line-height: 46px;
-        }
-
-        .reasons-list-item > p {
-          font-size: 14px;
-          line-height: 22px;
-          padding-top: 0;
-          font-family: var(--app-font);
-        }
-
-        .reasons-benefits > div {
-          display: flex;
-
-          flex-direction: row;
-          align-items: center;
-          width: 650px;
-          margin: 20px 0;
-        }
-
-        .reasons-benefits > div > img {
-          margin-right: 15px;
-        }
-
         /* YOU CAN'T CHOICE? */
 
         .make-call-order {
@@ -376,7 +225,6 @@ const Page: NextPage = () => (
         .make-call-order > div:nth-child(1) {
           border-right: 1px white solid;
           width: 54%;
-          padding-right: 60px;
         }
 
         .make-call-order > div:nth-child(1) span {

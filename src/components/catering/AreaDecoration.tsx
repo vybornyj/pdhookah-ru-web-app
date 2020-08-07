@@ -1,29 +1,21 @@
 import { Button1 } from 'src/components/Button1'
 
-export const MakeCallOrder = () => {
+export const AreaDecoration = () => {
   return (
     <>
-      <section>
+      <section className='area-decoration'>
         <div className='make-call-order'>
           <div>
-            <h3>Доставка кальянов на дом (Москва) круглосуточно.</h3>
+            <h3>Оформление кальянной зоны</h3>
             <p>
-              Круглосуточная доставка кальянов на дом в течение <span>90 минут</span>
+              Кальянная зона оформляется в соответствии со стилистикой предстоящего мероприятия. Обратившись к нам, вы получите несколько вариантов по
+              оформлению кальянной зоны, и выберет для себя наиболее подходящий.
             </p>
-            <p>
-              Доставка осуществляется по Москве в любое удобное для вас время. <br /> Вы можете заказать кальян с любым вкусом: кислый, сладкий,
-              свежий.
-            </p>
-            <div className='make-call-order-phone'>
-              <img src='/assets/images/rent/callphone-icon.png' alt='' />+ 7 (925) 355-00-53
-            </div>
           </div>
           <div className='order-result'>
             <div className='order-container'>
               <div>
-                <span>
-                  <b> Закажите обратный звонок</b>, и наш специалист <br /> соберет для вас идеальный кальян!
-                </span>
+                <span>Закажите обратный звонок, и вы получите горячее предложение по оформлению кальянной зоны на мероприятии под ключ.</span>
               </div>
               <Button1>Заказать обратный звонок</Button1>
             </div>
@@ -32,6 +24,10 @@ export const MakeCallOrder = () => {
       </section>
       <style jsx>{
         /* language=CSS */ `
+          .area-decoration {
+            margin: 50px 0;
+          }
+
           .make-call-order {
             margin-top: 50px;
             display: flex;
@@ -42,6 +38,7 @@ export const MakeCallOrder = () => {
           .make-call-order > div:nth-child(1) {
             border-right: 1px white solid;
             width: 54%;
+            padding: 50px 65px;
           }
 
           .make-call-order > div:nth-child(1) span {
@@ -102,6 +99,7 @@ export const MakeCallOrder = () => {
           .order-container > div:nth-child(1) {
             display: flex;
             align-items: center;
+            padding-right: 70px;
           }
 
           @media (max-width: 600px) {

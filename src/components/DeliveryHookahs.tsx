@@ -1,68 +1,64 @@
 import { Button1 } from 'src/components/Button1'
 
-export const DoItYourself = () => {
+export const DeliveryHookahs = () => {
   return (
     <>
       <section>
-        <div className='container-do-it-yourself'>
-          <div className='make-call-order'>
-            <div>
-              <h3>
-                Как сделать кальян. <span> Пошаговое руководство от эксперта.</span>
-              </h3>
-
-              <Button1 variant='yellow'>Посмотреть руководство</Button1>
+        <div className='make-call-order'>
+          <div>
+            <h3>при заказе кальянного кейтеринга (Москва и МО) на мероприятие</h3>
+            <p>Вы предоставляете гостям разнообразие времяпрепровождения и вносите в формат мероприятия</p>
+            <div className='make-call-order-phone'>
+              <img src='/assets/images/rent/callphone-icon.png' alt='' />+ 7 (925) 355-00-53
             </div>
-            <div className='order-result'>
-              <div className='order-container'>
-                <div>
-                  <span>
-                    Закажите обратный звонок, и <br /> наш специалист соберет для <br /> вас идеальный кальян!
-                  </span>
-                </div>
-                <Button1>Заказать обратный звонок</Button1>
+          </div>
+          <div className='order-result'>
+            <div className='order-container'>
+              <div>
+                <span>
+                  <b> Закажите обратный звонок</b>, и вы получите персональное предложение об организации кальянного кейтеринга для своего
+                  мероприятия.
+                </span>
               </div>
+              <Button1>Заказать обратный звонок</Button1>
             </div>
           </div>
         </div>
       </section>
       <style jsx>{
         /* language=CSS */ `
-          .container-do-it-yourself {
-            width: 1200px;
-            margin: 50px 5px;
-            padding: 20px 0;
-          }
-
           .make-call-order {
+            margin-top: 50px;
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 0 20px;
           }
 
           .make-call-order > div:nth-child(1) {
             border-right: 1px white solid;
-            width: 62%;
-            padding: 0 15px 40px 0;
+            width: 54%;
           }
 
           .make-call-order > div:nth-child(1) span {
-            background: linear-gradient(238.8deg, #ffbf50 -31.06%, #b67b16 115.79%);
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 7px;
+            margin-left: 5px;
           }
 
           .make-call-order > div:nth-child(2) {
-            width: 38%;
+            width: 46%;
           }
 
           .make-call-order h3 {
             font-family: var(--app-font-alt);
             font-style: normal;
             font-weight: normal;
-            font-size: 35px;
-            line-height: 60px;
+            font-size: 24px;
+            line-height: 34px;
             text-transform: uppercase;
+            margin-bottom: 20px;
           }
 
           .make-call-order p {
@@ -90,26 +86,26 @@ export const DoItYourself = () => {
           }
 
           .order-result {
-            padding-left: 60px;
+            padding-left: 50px;
             display: flex;
             align-items: center;
           }
 
           .order-container > div {
-            height: 200px;
-            margin-bottom: 30px;
-          }
-          .order-container > div > span {
-            font-family: var(--app-font);
-            font-style: normal;
-            font-weight: normal;
-            font-size: 24px;
-            line-height: 33px;
+            margin-bottom: 50px;
           }
 
           .order-container > div:nth-child(1) {
             display: flex;
             align-items: center;
+            padding-right: 70px;
+          }
+
+          @media (max-width: 600px) {
+            .grid {
+              width: 100%;
+              flex-direction: column;
+            }
           }
         `
       }</style>

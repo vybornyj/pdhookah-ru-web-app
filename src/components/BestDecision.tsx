@@ -3,7 +3,7 @@ import { Button1 } from 'src/components/Button1'
 export const BestDecision = () => {
   return (
     <>
-      <section>
+      <section className='best-decision-block'>
         <div className='container'>
           <div className='best-decision'>
             <h2>
@@ -21,11 +21,21 @@ export const BestDecision = () => {
 
             <Button1>Заказать обратный звонок</Button1>
           </div>
+          <div>
+            <img src='/assets/images/rent/hookahs-best.png' alt='' />
+          </div>
         </div>
       </section>
 
       <style jsx>{
         /* language=CSS */ `
+          .best-decision-block img {
+            position: absolute;
+
+            left: 1099px;
+            top: 4108px;
+          }
+
           .best-decision {
             width: 1200px;
             padding: 10px;
@@ -52,7 +62,7 @@ export const BestDecision = () => {
           }
 
           .best-decision p > span {
-            color: #378bd2;
+            color: #198fe7;
             font-weight: bold;
             text-decoration: underline;
           }
@@ -65,7 +75,7 @@ export const BestDecision = () => {
             line-height: 40px;
             letter-spacing: 1px;
             text-transform: uppercase;
-            margin: 50px 0 20px;
+            margin: 50px 0 10px;
           }
 
           .best-decision p:last-of-type {

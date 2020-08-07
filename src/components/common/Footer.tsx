@@ -13,11 +13,15 @@ export const Footer: FunctionComponent = () => (
         </Link>
       </div>
       <div>
-        <a href='/arenda-i-dostavka-kalyana-na-dom'> Заказ и аренда кальянов</a>
+        <Link href='/arenda-i-dostavka-kalyana-na-dom'>
+          <a> Заказ и аренда кальянов</a>
+        </Link>
       </div>
 
       <div>
-        <a href='/kalyannyj-kejtering-v-moskve'> Кальянный кейтеринг</a>
+        <Link href='/kalyannyj-kejtering-v-moskve'>
+          <a> Кальянный кейтеринг</a>
+        </Link>
       </div>
 
       <div className='footer-phone'>+ 7 (925) 355-00-53</div>

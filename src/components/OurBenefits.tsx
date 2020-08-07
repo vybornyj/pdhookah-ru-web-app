@@ -37,7 +37,6 @@ export const OurBenifits = () => {
         /* language=CSS */ `
           .our-benefits {
             width: 1200px;
-            padding: 10px 10px 10px 20px;
           }
 
           .our-benefits h2 {
