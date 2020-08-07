@@ -35,10 +35,10 @@ export const Template: FunctionComponent<Props> = ({ title, description, error, 
             min-height: 100vh;
             color: white;
           }
-          .main > :global(section) {
-            margin: auto;
-            width: 1200px;
-          }
+          /*.main > :global(section) {*/
+          /*  margin: auto;*/
+          /*  width: 1200px;*/
+          /*}*/
         `
       }</style>
     </>
