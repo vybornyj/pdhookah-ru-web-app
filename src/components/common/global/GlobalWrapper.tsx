@@ -276,6 +276,204 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             /*background: linear-gradient(261.22deg, #ffbf50 -31.06%, #b67b16 115.79%);*/
           }
 
+          @media screen and (max-width: 1024px) {
+            section,
+            .header-wrapper,
+            .effects1,
+            .offer-wrapper,
+            .offer-info > p,
+            footer > div,
+            footer {
+              width: auto !important;
+            }
+
+            .top-line .phone {
+              margin: auto;
+            }
+
+            .top-line .logo {
+              margin: auto;
+            }
+
+            .hookah {
+              display: none;
+              left: 0 !important;
+            }
+
+            .offer-wrapper {
+              margin-bottom: 50px;
+            }
+
+            .offer-text-large {
+              font-size: 2rem;
+              line-height: normal;
+            }
+
+            .offer-title-small,
+            .offer-text-large,
+            .offer h4 {
+              text-align: center;
+            }
+
+            .offer ul {
+              font-size: 1rem;
+              padding-left: 15%;
+            }
+
+            .offer-info > p {
+              padding: 0 5%;
+            }
+
+            .offer-buttons {
+              margin-top: 30px;
+              display: flex;
+              flex-direction: column;
+            }
+
+            .offer-buttons > a {
+              margin: 10px auto;
+            }
+
+            footer {
+              margin-top: -140px;
+            }
+
+            footer svg {
+              display: none;
+            }
+
+            footer > div {
+              flex-direction: column;
+            }
+
+            footer > div > div {
+              margin: 5px auto !important;
+            }
+
+            /***  HOME RENTAL  ***/
+
+            .container-do-it-yourself,
+            .best-decision,
+            .reasons-to-order-container,
+            .our-benefits,
+            .home-order-container,
+            .make-call-order > div,
+            .configure-hookah,
+            .container-how-it-works > div,
+            .reasons-benefits > div,
+            .best-decision p,
+            .make-call-order h3 {
+              width: auto !important;
+            }
+
+            .container-do-it-yourself,
+            .make-call-order,
+            .how-it-works {
+              margin: 0 !important;
+            }
+
+            .reasons-list-item {
+              width: 30%;
+            }
+            .best-decision-block img,
+            .reasons-to-order img {
+              display: none;
+              position: initial !important;
+            }
+
+            section.configure {
+              margin-left: 0 !important;
+            }
+
+            .home-order-list,
+            .reasons-to-order,
+            .make-call-order,
+            .our-benefits > div,
+            .how-it-works,
+            .container-how-it-works,
+            .reasons-list > div,
+            footer > div {
+              flex-direction: column !important;
+            }
+
+            .our-benefits > div > img {
+              width: 100%;
+            }
+            .configure-hookah {
+              padding: 0 !important;
+            }
+            .configure-hookah h2 {
+              text-align: center;
+              font-size: 30px;
+            }
+
+            .configure-hookah h3 {
+              text-align: center;
+              font-size: 24px;
+            }
+
+            .configure-hookah .modes {
+              display: block;
+              text-align: center;
+            }
+
+            .configure-hookah .modes div {
+              display: inline-block;
+            }
+            .configure-hookah .hookah-kit {
+              flex-direction: column;
+              margin-left: 5%;
+            }
+
+            .make-call-order > div:nth-child(1) {
+              border-right: none !important;
+            }
+
+            .make-call-order > div {
+              padding: 0 !important;
+              margin: 0 !important;
+              text-align: center;
+            }
+
+            .order-container > div:nth-child(1) {
+              text-align: center;
+              flex-direction: column;
+              align-self: center;
+            }
+
+            .order-result {
+              align-self: center;
+            }
+            .make-call-order-phone {
+              margin-bottom: 20px;
+            }
+
+            .order-container > div:nth-child(1) {
+              margin-bottom: 20px;
+            }
+
+            .make-call-order {
+              margin-top: 30px !important;
+            }
+
+            .home-order h2,
+            .reasons-to-order-container h2 {
+              text-align: center;
+              font-size: 28px !important;
+              line-height: normal !important;
+            }
+            .home-order-list {
+              display: block !important;
+            }
+
+            .home-order-list-item {
+              padding: 10px 20px;
+              width: 50%;
+              height: auto;
+              display: inline-block;
+              vertical-align: top;
+            }
+          }
           /* GLOBAL HELPERS ------------------------------------------------------------------------------------------------------------------------- */
 
           h1.global,
