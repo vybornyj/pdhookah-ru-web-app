@@ -1,4 +1,4 @@
-import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
 export const DeliveryHookahs = () => {
   return (
@@ -20,7 +20,7 @@ export const DeliveryHookahs = () => {
                   мероприятия.
                 </span>
               </div>
-              <Button1>Заказать обратный звонок</Button1>
+              <ButtonFeedback />
             </div>
           </div>
         </div>

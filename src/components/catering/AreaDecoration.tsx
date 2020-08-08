@@ -1,4 +1,4 @@
-import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
 export const AreaDecoration = () => {
   return (
@@ -17,7 +17,7 @@ export const AreaDecoration = () => {
               <div>
                 <span>Закажите обратный звонок, и вы получите горячее предложение по оформлению кальянной зоны на мероприятии под ключ.</span>
               </div>
-              <Button1>Заказать обратный звонок</Button1>
+              <ButtonFeedback />
             </div>
           </div>
         </div>

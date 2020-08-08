@@ -1,9 +1,14 @@
+import Head from 'next/head'
 import { FunctionComponent } from 'react'
 import { GlobalAlertPopup } from 'src/components/common/global/GlobalAlertPopup'
 
 export const GlobalWrapper: FunctionComponent = ({ children }) => {
   return (
     <>
+      <Head>
+        <meta name='viewport' content='minimum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
+      </Head>
+
       <GlobalAlertPopup />
 
       {children}

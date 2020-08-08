@@ -1,4 +1,4 @@
-import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
 export const HookahCatering = () => {
   return (
@@ -27,7 +27,7 @@ export const HookahCatering = () => {
                 </p>
                 <p>Каждый гость получит незабываемые впечатления от красивой кальянной церемонии.</p>
                 <p>Кальян уместен абсолютно на любом торжестве: деловые переговоры, свадьбы, корпоративы, юбилеи, банкеты и прочее.</p>
-                <Button1>Заказать обратный звонок</Button1>
+                <ButtonFeedback />
               </div>
 
               <div>

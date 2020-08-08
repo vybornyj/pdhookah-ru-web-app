@@ -39,8 +39,8 @@ export const RentalBlock2Variant: FunctionComponent<props> = ({ title, price, im
             align-items: center;
             text-align: center;
 
-            width: 150px;
-            margin: 0 10px;
+            width: 130px;
+            margin: 10px 10px;
           }
 
           .price {

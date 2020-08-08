@@ -1,8 +1,13 @@
+import { useState } from 'react'
 import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
+import { ModalInstruction3 } from 'src/components/common/modals/ModalInstruction3'
 
 export const DoItYourself = () => {
+  const [modal3isOpen, setModal3isOpen] = useState(false)
   return (
     <>
+      <ModalInstruction3 isOpen={modal3isOpen} closing={() => setModal3isOpen(false)} />
       <section>
         <div className='container-do-it-yourself'>
           <div className='make-call-order'>
@@ -11,7 +16,9 @@ export const DoItYourself = () => {
                 Как сделать кальян. <span> Пошаговое руководство от эксперта.</span>
               </h3>
 
-              <Button1 variant='yellow'>Посмотреть руководство</Button1>
+              <Button1 onClick={() => setModal3isOpen(true)} variant='yellow'>
+                Посмотреть руководство
+              </Button1>
             </div>
             <div className='order-result'>
               <div className='order-container'>
@@ -20,7 +27,7 @@ export const DoItYourself = () => {
                     Закажите обратный звонок, и <br /> наш специалист соберет для <br /> вас идеальный кальян!
                   </span>
                 </div>
-                <Button1>Заказать обратный звонок</Button1>
+                <ButtonFeedback />
               </div>
             </div>
           </div>

@@ -41,7 +41,7 @@ const Page: NextPage = () => (
                 </ul>
               </div>
               <div className='offer-buttons'>
-                <a href='#'>
+                <a href='#event-calculate'>
                   <Button1>Заказать кальян</Button1>
                 </a>
               </div>

@@ -4,9 +4,10 @@ import { createPortal } from 'react-dom'
 interface Props {
   isOpen?: boolean
   closing?: (event?: MouseEvent) => void
+  maxWidth?: number
 }
 
-export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children }) => {
+export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, maxWidth = 700 }) => {
   const [container, setContainer] = useState<HTMLDivElement | null>()
   const [timeoutId, setTimeoutId] = useState(0)
   const [timeoutId2, setTimeoutId2] = useState(0)
@@ -106,7 +107,7 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children }
 
           .modal {
             width: 100%;
-            max-width: 700px;
+            max-width: ${maxWidth}px;
             cursor: initial;
 
             transition: var(--app-transition);

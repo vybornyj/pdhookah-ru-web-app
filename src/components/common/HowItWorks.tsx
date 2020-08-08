@@ -46,7 +46,9 @@ export const HowItWorks = () => {
           </div>
         </div>
         <div className='how-button'>
-          <Button1>Собрать свой кальян</Button1>
+          <a href='#order'>
+            <Button1>Собрать свой кальян</Button1>
+          </a>
         </div>
       </section>
       <style jsx>{

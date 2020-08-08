@@ -17,12 +17,14 @@ export const RentalBlock2Mode: FunctionComponent<props> = ({ mode: currentMode, 
       <style jsx>{
         /* language=CSS */ `
           .modes {
-            margin-top: 40px;
+            margin-top: 20px;
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
           }
 
           .modes > div {
-            margin-right: 30px;
+            margin: 15px 30px 0 0;
             padding: 10px 25px;
             text-transform: uppercase;
 

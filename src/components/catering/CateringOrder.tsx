@@ -1,4 +1,4 @@
-import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
 export const CateringOrder = () => {
   return (
@@ -22,7 +22,7 @@ export const CateringOrder = () => {
                   <b> Закажите обратный звонок</b>, и наш специалист <br /> соберет для вас идеальный кальян!
                 </span>
               </div>
-              <Button1>Заказать обратный звонок</Button1>
+              <ButtonFeedback />
             </div>
           </div>
         </div>

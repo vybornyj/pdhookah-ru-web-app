@@ -3,7 +3,7 @@ import { Button1 } from 'src/components/Button1'
 export const EventCalculate = () => {
   return (
     <>
-      <section className='event-calculate'>
+      <section id='event-calculate' className='event-calculate'>
         <div className='container'>
           <h2>
             <span> Калькулятор</span> мероприятия:

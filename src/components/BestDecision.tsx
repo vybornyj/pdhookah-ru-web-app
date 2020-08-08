@@ -1,4 +1,4 @@
-import { Button1 } from 'src/components/Button1'
+import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
 export const BestDecision = () => {
   return (
@@ -19,7 +19,7 @@ export const BestDecision = () => {
             <h3>закажите обратный звонок</h3>
             <p>После отправки заявки, наш менеджер перезвонит вам в ближайшее время кальян будет доставлен на дом</p>
 
-            <Button1>Заказать обратный звонок</Button1>
+            <ButtonFeedback />
           </div>
           <div>
             <img src='/assets/images/rent/hookahs-best.png' alt='' />

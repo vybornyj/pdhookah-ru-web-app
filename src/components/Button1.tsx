@@ -2,11 +2,12 @@ import React, { FunctionComponent } from 'react'
 
 interface Props {
   variant?: 'blue' | 'bluePrev' | 'yellow'
+  onClick?: () => void
 }
 
-export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue' }) => {
+export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue', onClick }) => {
   return (
-    <div className={variant}>
+    <div className={variant} onClick={onClick}>
       {children}
       <style jsx>{
         /* language=CSS */ `
@@ -21,6 +22,8 @@ export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue' }
             text-align: center;
             font-size: 18px;
             letter-spacing: 1px;
+            cursor: pointer;
+            color: white;
           }
           div.bluePrev {
             background: linear-gradient(90deg, #125b90, #3795dd);
