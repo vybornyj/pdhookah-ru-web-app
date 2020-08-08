@@ -283,13 +283,6 @@ const Page: NextPage = () => (
             display: flex;
             align-items: center;
           }
-
-          @media (max-width: 600px) {
-            .grid {
-              width: 100%;
-              flex-direction: column;
-            }
-          }
         `
       }</style>
     </div>

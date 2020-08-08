@@ -116,13 +116,6 @@ const Home = () => (
           .payments img {
             margin-right: 50px;
           }
-
-          @media (max-width: 600px) {
-            .grid {
-              width: 100%;
-              flex-direction: column;
-            }
-          }
         `
       }</style>
     </div>
