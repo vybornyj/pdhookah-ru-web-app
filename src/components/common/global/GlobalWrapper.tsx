@@ -258,7 +258,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
           }
 
           .social-links > div > span {
-            margin-left: 20px;
+            margin-left: 25px;
           }
 
           .social-item {
@@ -268,12 +268,26 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
           .social-item .img-wrap {
             width: 36px;
             height: 36px;
-            top: 0;
-            left: 0;
+
             margin-left: -5px;
             border-radius: 18px;
             position: absolute;
-            /*background: linear-gradient(261.22deg, #ffbf50 -31.06%, #b67b16 115.79%);*/
+            background: linear-gradient(261.22deg, #ffbf50 -31.06%, #b67b16 115.79%);
+          }
+
+          .social-item:nth-child(1) div {
+            top: -4px;
+            left: -1px;
+          }
+
+          .social-item:nth-child(2) div {
+            top: -4px;
+            left: -3px;
+          }
+
+          .social-item:nth-child(3) div {
+            top: -4px;
+            left: -9px;
           }
 
           @media screen and (max-width: 1024px) {
@@ -293,6 +307,10 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
             .top-line .logo {
               margin: auto;
+            }
+
+            .logo svg {
+              width: 100%;
             }
 
             .hookah {
@@ -362,7 +380,8 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             .container-how-it-works > div,
             .reasons-benefits > div,
             .best-decision p,
-            .make-call-order h3 {
+            .make-call-order h3,
+            .reasons-list-item {
               width: auto !important;
             }
 
@@ -372,8 +391,19 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
               margin: 0 !important;
             }
 
+            .make-call-order p {
+              display: inline-block !important;
+              text-align: center;
+            }
+
+            .reasons-list > div {
+              justify-content: center;
+            }
+
             .reasons-list-item {
               width: 30%;
+
+              display: flex;
             }
             .best-decision-block img,
             .reasons-to-order img {
@@ -391,9 +421,21 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             .our-benefits > div,
             .how-it-works,
             .container-how-it-works,
-            .reasons-list > div,
             footer > div {
               flex-direction: column !important;
+            }
+
+            .container-how-it-works img {
+              display: none;
+            }
+
+            .container-how-it-works {
+              text-align: center;
+            }
+
+            .container-how-it-works p {
+              text-align: left;
+              padding: 5% !important;
             }
 
             .our-benefits > div > img {
@@ -454,6 +496,10 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
             .make-call-order {
               margin-top: 30px !important;
+            }
+
+            .home-order-container {
+              text-align: center;
             }
 
             .home-order h2,

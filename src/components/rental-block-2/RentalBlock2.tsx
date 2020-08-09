@@ -75,30 +75,53 @@ export const RentalBlock2: FunctionComponent = () => {
               <div className='hookah-kit'>
                 <div className='hookah-kit-col'>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Кальян</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-kolian.png' alt='' />
+                    </div>
+                    <div> Кальян</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Плитка для углей</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-plitka.png' alt='' />
+                    </div>
+                    <div> Плитка для углей</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Одноразовые мундштуки</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-mundshtuk.png' alt='' />
+                    </div>
+                    <div> Одноразовые мундштуки</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Табак</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-tabak.png' alt='' />
+                    </div>
+                    <div> Табак</div>
                   </div>
                 </div>
                 <div className='hookah-kit-col'>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Щипчики</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-shipcy.png' alt='' />
+                    </div>
+                    <div> Щипчики</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Угли</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-ugli.png' alt='' />
+                    </div>
+                    <div> Угли</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' /> <div> Чаша</div>
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-chasha.png' alt='' />
+                    </div>
+                    <div> Чаша</div>
                   </div>
                   <div>
-                    <img src='/assets/images/hookah-item.jpg' alt='' />
+                    <div className='item-img-wrap'>
+                      <img src='/assets/images/rent/item-zhidkost.png' alt='' />
+                    </div>
                     <div>
                       Жидкость на выбор: <br /> молоко, алкоголь коктейль...
                     </div>
@@ -113,7 +136,7 @@ export const RentalBlock2: FunctionComponent = () => {
                   Просто позвоните нам, и мы соберем <br /> для вас кальян!
                 </p>
                 <div className='make-call-order-phone'>
-                  <img src='/assets/images/hookah-item.jpg' alt='' />
+                  <img src='/assets/images/rent/phone-call.png' alt='' />
                   +7 (925) 355-00-53
                 </div>
               </div>
@@ -200,6 +223,17 @@ export const RentalBlock2: FunctionComponent = () => {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
+          }
+
+          .item-img-wrap {
+            width: 47px;
+            height: 47px;
+            background: linear-gradient(261.22deg, #ffbf50 -31.06%, #b67b16 115.79%);
+            box-shadow: 0 4px 9px rgba(0, 0, 0, 0.82);
+            text-align: center;
+            border-radius: 24px;
+            line-height: 44px;
+            margin-right: 15px;
           }
 
           .hookah-kit-col > div > img {
