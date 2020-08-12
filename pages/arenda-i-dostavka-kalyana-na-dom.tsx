@@ -188,8 +188,8 @@ const Page: NextPage = () => (
             margin: 20px;
             position: relative;
             border-radius: 90px;
-            width: 124px;
-            height: 124px;
+            width: 126px;
+            height: 126px;
 
             text-align: center;
             line-height: 124px;

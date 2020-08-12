@@ -291,8 +291,11 @@ export const RentalBlock2: FunctionComponent = () => {
           }
 
           .make-call-order-phone {
-            font-size: 26px;
-            font-weight: bold;
+            font-family: var(--app-font-alt);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 36px;
+            line-height: 51px;
           }
 
           .make-call-order-phone > img {

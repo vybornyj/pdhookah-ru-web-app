@@ -196,6 +196,33 @@ export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPric
           .footer > h3 {
             margin: 30px 10px;
           }
+
+          @media screen and (max-width: 1024px) {
+            .cart {
+              width: auto !important;
+            }
+
+            .cart > div > div {
+            }
+
+            .remove {
+              position: absolute;
+              top: 25px;
+              left: 55px;
+            }
+
+            .element {
+              flex-direction: column;
+
+              height: auto !important;
+              position: relative;
+              padding: 45px 0;
+            }
+
+            .main {
+              padding: 0 10px;
+            }
+          }
         `
       }</style>
     </div>

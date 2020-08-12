@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React, { FunctionComponent } from 'react'
 import { SvgLogo } from 'src/components/common/SvgLogo'
+import { SocialLinks } from 'src/components/SocialLinks'
 
 export const Footer: FunctionComponent = () => (
   <footer>
@@ -25,6 +26,8 @@ export const Footer: FunctionComponent = () => (
       </div>
 
       <div className='footer-phone'>+ 7 (925) 355-00-53</div>
+
+      <SocialLinks />
     </div>
     <style jsx>{
       /* language=CSS */ `

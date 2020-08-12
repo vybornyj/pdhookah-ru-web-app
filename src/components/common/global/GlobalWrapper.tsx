@@ -6,7 +6,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
   return (
     <>
       <Head>
-        <meta name='viewport' content='minimum-scale=5, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
 
       <GlobalAlertPopup />
@@ -110,6 +110,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
           header {
             background: url('/assets/images/main/layer1.png') no-repeat;
+            background-size: cover;
             width: 100%;
           }
 
@@ -290,7 +291,55 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             left: -9px;
           }
 
+          footer .social-links {
+            display: none;
+          }
+
+          @media screen and (max-width: 1440px) {
+            section,
+            .header-wrapper,
+            footer > div,
+            .our-benefits {
+              width: 100% !important;
+            }
+
+            .offer-wrapper {
+              margin-bottom: 100px !important;
+              width: 100%;
+            }
+
+            .social-links {
+              margin-top: 50px;
+              margin-right: 8%;
+              display: flex;
+              justify-content: space-around;
+              position: relative;
+              left: 0;
+            }
+
+            .social-links > div {
+              height: auto;
+              margin: 0 !important;
+              transform: rotate(0deg) !important;
+            }
+
+            .social-item img {
+              transform: rotate(0deg) !important;
+            }
+          }
+
           @media screen and (max-width: 1024px) {
+            .social-links {
+              display: none;
+            }
+            footer .social-links {
+              display: flex !important;
+              width: 100%;
+            }
+            footer .social-links span {
+              display: none;
+            }
+
             section,
             .header-wrapper,
             .effects1,
@@ -339,7 +388,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             }
 
             .offer-info > p {
-              padding: 0 5%;
+              padding: 0 15px;
             }
 
             .offer-buttons {
@@ -381,13 +430,15 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             .reasons-benefits > div,
             .best-decision p,
             .make-call-order h3,
-            .reasons-list-item {
+            .reasons-list-item,
+            .hookah-kit > div {
               width: auto !important;
             }
 
             .container-do-it-yourself,
             .make-call-order,
-            .how-it-works {
+            .how-it-works,
+            .reasons-to-order {
               margin: 0 !important;
             }
 
@@ -396,17 +447,30 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
               text-align: center;
             }
 
+            .reasons-benefits > div {
+              margin: 10px !important;
+              text-align: left;
+            }
+
+            .reasons-benefits > div:nth-child(1) > img {
+              margin-right: 21px !important;
+            }
+
             .reasons-list > div {
-              justify-content: center;
+              justify-content: space-around;
+            }
+
+            .reasons-to-order {
+              text-align: center;
             }
 
             .reasons-list-item {
               width: 30%;
-
               display: flex;
+              flex-direction: column;
             }
             .best-decision-block img,
-            .reasons-to-order img {
+            .reasons-to-order > div > img {
               display: none;
               position: initial !important;
             }
@@ -431,16 +495,35 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
             .container-how-it-works {
               text-align: center;
+              margin-top: 50px;
             }
 
             .container-how-it-works p {
               text-align: left;
-              padding: 5% !important;
+              padding: 10px 15px !important;
             }
 
-            .our-benefits > div > img {
-              width: 100%;
+            .our-benefits {
+              text-align: center;
             }
+
+            .our-benefits > div {
+              margin: 0 0 6% 0;
+            }
+            .our-benefits > div > img {
+              width: 92%;
+              margin-bottom: 6%;
+            }
+
+            .our-benefits > div > div {
+              padding: 0 !important;
+            }
+
+            .our-benefits p {
+              padding: 10px 15px !important;
+              text-align: left;
+            }
+
             .configure-hookah {
               padding: 0 !important;
             }
@@ -473,7 +556,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
             .make-call-order > div {
               padding: 0 !important;
-              margin: 0 !important;
+              /*margin: 0 10px !important;*/
               text-align: center;
             }
 
@@ -481,31 +564,46 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
               text-align: center;
               flex-direction: column;
               align-self: center;
+              margin-bottom: 20px;
+            }
+
+            .order-container > div {
+              margin-bottom: 30px !important;
             }
 
             .order-result {
               align-self: center;
             }
+
             .make-call-order-phone {
               margin-bottom: 20px;
+              font-size: 18px !important;
             }
 
-            .order-container > div:nth-child(1) {
-              margin-bottom: 20px;
-            }
-
-            .make-call-order {
+            .make-call-order,
+            .best-decision {
               margin-top: 30px !important;
             }
 
-            .home-order-container {
+            .step-by-step {
+              margin: 50px 0 -60px !important;
+            }
+
+            .home-order-container,
+            .reasons-list {
+              text-align: center;
+            }
+            .best-decision-block h3 {
               text-align: center;
             }
 
             .home-order h2,
-            .reasons-to-order-container h2 {
+            .reasons-to-order-container h2,
+            .best-decision h2,
+            .our-benefits h2,
+            .make-call-order h3 {
               text-align: center;
-              font-size: 28px !important;
+              font-size: 24px !important;
               line-height: normal !important;
             }
             .home-order-list {
@@ -513,11 +611,119 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             }
 
             .home-order-list-item {
-              padding: 10px 20px;
+              padding: 10px 15px;
               width: 50%;
-              height: auto;
+              height: auto !important;
               display: inline-block;
               vertical-align: top;
+            }
+
+            .information {
+              padding: 0 15px !important;
+            }
+
+            .information ul {
+              padding-left: 25px;
+            }
+
+            .fixedPrice {
+              width: 60px !important;
+              height: 60px !important;
+              right: 15px !important;
+              bottom: 15px !important;
+            }
+            .price {
+              font-size: 16px !important;
+              width: 95px !important;
+              right: 0 !important;
+              bottom: 82px !important;
+            }
+
+            /*** CATERING ***/
+
+            .hookah-catering,
+            .event-calculate-form,
+            .event-calculate-form > div,
+            .event-organize,
+            .hookah-catering > div > div:nth-child(1) {
+              width: auto !important;
+            }
+
+            .event-calculate-form {
+              padding: 0 !important;
+              text-align: center;
+            }
+            .event-calculate h2,
+            .hookah-catering h2,
+            .event-organize h2 {
+              text-align: center;
+              font-size: 24px !important;
+              line-height: normal !important;
+            }
+
+            .event-calculate-form > div {
+              padding: 10px !important;
+            }
+
+            .first > div {
+              flex-direction: column;
+              align-items: self-end;
+            }
+
+            .first > div > div {
+              margin: 10px 0 !important;
+            }
+
+            .event-calculate-form > div > div,
+            .second-third {
+              display: flex;
+              flex-direction: column !important;
+              align-items: center;
+            }
+
+            .event-calculate-form > div > div,
+            .third {
+              text-align: center !important;
+              margin-top: 20px !important;
+              margin-bottom: 20px !important;
+            }
+
+            .event-calculate-form input {
+              display: inline-block;
+            }
+
+            /* Вложенность для набора специфичности и применения стилей */
+            div > div > div > .blue {
+              line-height: normal !important;
+              padding: 10px 15px !important;
+            }
+
+            select {
+              width: auto !important;
+              margin: 0 !important;
+            }
+
+            .hookah-catering img {
+              display: none;
+            }
+            .hookah-catering,
+            .event-organize {
+              padding: 0 15px !important;
+            }
+            .event-organize > div {
+              flex-direction: column;
+            }
+
+            .event-organize > div > div > img {
+              width: 100%;
+            }
+
+            .event-organize > div > div:nth-child(1) {
+              margin: 0 !important;
+            }
+
+            .order-container > div:nth-child(1) {
+              padding: 0 !important;
             }
           }
           /* GLOBAL HELPERS ------------------------------------------------------------------------------------------------------------------------- */

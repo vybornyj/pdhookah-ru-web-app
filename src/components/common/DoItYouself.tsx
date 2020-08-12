@@ -22,7 +22,7 @@ export const DoItYourself = () => {
             </div>
             <div className='order-result'>
               <div className='order-container'>
-                <div>
+                <div className='step-by-step'>
                   <span>
                     Закажите обратный звонок, и <br /> наш специалист соберет для <br /> вас идеальный кальян!
                   </span>

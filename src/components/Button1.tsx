@@ -20,7 +20,6 @@ export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue', 
             padding: 0 40px;
             min-width: 280px;
             text-align: center;
-            font-size: 18px;
             letter-spacing: 1px;
             cursor: pointer;
             color: white;
@@ -33,6 +32,12 @@ export const Button1: FunctionComponent<Props> = ({ children, variant = 'blue', 
           }
           div.yellow {
             background: linear-gradient(90deg, #bf841e, #ebad40);
+          }
+
+          @media screen and (max-width: 1024px) {
+            div {
+              padding: 0 15px;
+            }
           }
         `
       }</style>
