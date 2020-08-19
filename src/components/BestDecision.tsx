@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react'
 import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
-export const BestDecision = () => {
+export const BestDecision: FunctionComponent = () => {
   return (
     <>
       <section className='best-decision-block'>

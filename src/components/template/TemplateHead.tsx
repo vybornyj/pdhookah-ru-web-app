@@ -12,7 +12,7 @@ export const TemplateHead: FunctionComponent<Props> = ({ title, description }) =
 
   return (
     <Head>
-      <title>{title ? `${title} - Кальяны МСК` : 'Кальяны МСК'}</title>
+      <title>{title ? `${title} - Подводный Дым` : 'Подводный Дым - Кальяны в Москве'}</title>
       <meta name='description' content={description ?? 'Кальяны в Москве, арендна и доставка, кальянный кейтеринг'} />
       <meta name='viewport' content='width=device-width, initial-scale=1' />
       <link rel='canonical' href={`/${router.asPath}`} />

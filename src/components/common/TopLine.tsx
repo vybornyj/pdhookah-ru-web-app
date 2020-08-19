@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 import { ModalFeedback } from 'src/components/common/modals/ModalFeedback'
 import { SvgLogo } from 'src/components/common/SvgLogo'
 
-export const TopLine = () => {
+export const TopLine: FunctionComponent = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <div className='top-line'>

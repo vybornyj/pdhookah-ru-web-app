@@ -7,21 +7,15 @@ interface props {
   cart: { [name: string]: number }
   addToCart: (mode: string, key: number | string, action?: 'add' | 'remove' | 'clear') => void
   totalPrice: number
-  closing: () => void
 }
 
-export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPrice, closing }) => {
+export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPrice }) => {
   const objectKeys = Object.keys(cart)
 
   return (
     <div className='cart'>
       {objectKeys.length ? (
         <>
-          <div className='header'>
-            <div className='close' onClick={closing}>
-              <img className='img2' src='/assets/icons/remove.png' alt='' />
-            </div>
-          </div>
           <div className='main'>
             {objectKeys.map(objectKey => {
               const [mode, key] = objectKey.split('--')
@@ -62,16 +56,9 @@ export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPric
           </div>
         </>
       ) : (
-        <>
-          <div className='header'>
-            <div className='close' onClick={closing}>
-              <img className='img2' src='/assets/icons/remove.png' alt='' />
-            </div>
-          </div>
-          <main>
-            <h3>Корзина пуста</h3>
-          </main>
-        </>
+        <div className='main'>
+          <h3>Корзина пуста</h3>
+        </div>
       )}
 
       <style jsx>{
@@ -80,25 +67,7 @@ export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPric
             width: 700px;
             min-width: 100%;
             background: white;
-            padding: 0 0 20px;
-          }
-
-          .header {
-            height: 30px;
-            color: hsl(0, 0%, 70%);
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-          }
-
-          .close {
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            background: hsl(0, 0%, 90%);
+            padding: 20px 0;
           }
 
           .main {
@@ -183,6 +152,8 @@ export const ModalCart: FunctionComponent<props> = ({ cart, addToCart, totalPric
             text-transform: uppercase;
             color: steelblue;
             font-family: var(--app-font-alt);
+            margin: 30px 10px;
+            text-align: center;
           }
 
           .footer {

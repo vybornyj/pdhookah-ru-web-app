@@ -1,4 +1,6 @@
-export const EventOrganize = () => {
+import { FunctionComponent } from 'react'
+
+export const EventOrganize: FunctionComponent = () => {
   return (
     <>
       <section>

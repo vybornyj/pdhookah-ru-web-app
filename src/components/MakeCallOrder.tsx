@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react'
 import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
-export const MakeCallOrder = () => {
+export const MakeCallOrder: FunctionComponent = () => {
   return (
     <>
       <section>

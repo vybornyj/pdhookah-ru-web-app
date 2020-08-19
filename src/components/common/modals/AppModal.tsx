@@ -46,6 +46,7 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, 
     <div className={`AppModal ${displayed}`}>
       <div className={`background ${opened}`} />
       <div className='scrollable' onClick={closing} role='link' tabIndex={0}>
+        <div className='close' />
         <div className={`modal ${opened}`} onClick={event => event.stopPropagation()} role='link' tabIndex={0}>
           {children}
         </div>
@@ -79,10 +80,9 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, 
             position: fixed;
             top: 0;
             right: 0;
-            bottom: -100px; /* чтобы в мобильных под фоном не было белого отступа, из-за плавующей адресной строки */
+            bottom: -100px; /* чтобы в мобильных под фоном не было белого отступа, из-за плавающей адресной строки */
             left: 0;
 
-            /*https://www.svgbackgrounds.com/#liquid-cheese*/
             background-color: hsl(0, 0%, 0%);
 
             transition: var(--app-transition);
@@ -118,6 +118,33 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, 
           .modal.true {
             margin-top: 100px;
             opacity: 1;
+          }
+
+          .close {
+            position: absolute;
+            right: 32px;
+            top: 32px;
+            width: 32px;
+            height: 32px;
+            opacity: 0.5;
+          }
+          .close:hover {
+            opacity: 1;
+          }
+          .close:before,
+          .close:after {
+            position: absolute;
+            left: 15px;
+            content: ' ';
+            height: 33px;
+            width: 2px;
+            background: white;
+          }
+          .close:before {
+            transform: rotate(45deg);
+          }
+          .close:after {
+            transform: rotate(-45deg);
           }
         `
       }</style>

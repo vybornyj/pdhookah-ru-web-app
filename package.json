@@ -1,34 +1,32 @@
 {
   "name": "hookahs-vercel-app",
-  "version": "0.2.0",
+  "version": "0.3.2",
   "private": true,
   "author": "Denis Vybornyj <denis.vybornyj@gmail.com> (https://github.com/vybornyj)",
   "contributors": [
     "Denis Prohorenko <den.prohorenko@gmail.com> (https://github.com/dprohorenko)"
   ],
   "scripts": {
-    "_depcheck": "depcheck",
-    "_lint-types": "tsc --pretty --noEmit",
-    "_type-coverage": "type-coverage --ignore-catch --detail --update",
-    "_upgrade": "ncu -u",
-    "_upgrade-check": "ncu",
-    "dev": "next dev -p 80"
+    "build": "next build",
+    "dev": "next -p 80",
+    "start": "next start -p 80"
   },
   "resolutions": {
-    "webpack": "5.0.0-beta.24"
+    "webpack": "5.0.0-beta.26"
   },
   "dependencies": {
-    "next": "9.5.2-canary.9",
+    "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "reactn": "2.2.7",
     "sanitize.css": "11.0.1",
     "styled-jsx": "3.3.0"
   },
   "devDependencies": {
-    "@types/node": "14.0.27",
-    "@types/react": "16.9.44",
+    "@types/jest": "26.0.10",
+    "@types/node": "14.6.0",
+    "@types/react": "16.9.46",
     "@types/react-dom": "16.9.8",
+    "@types/styled-jsx": "2.2.8",
     "pages": "link:./pages",
     "src": "link:./src",
     "typescript": "3.9.7"
@@ -38,6 +36,6 @@
     "yarn": ">=1.22.4"
   },
   "typeCoverage": {
-    "atLeast": 97.22
+    "atLeast": 99.73
   }
 }

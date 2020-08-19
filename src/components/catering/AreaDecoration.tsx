@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react'
 import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
-export const AreaDecoration = () => {
+export const AreaDecoration: FunctionComponent = () => {
   return (
     <>
       <section className='area-decoration'>

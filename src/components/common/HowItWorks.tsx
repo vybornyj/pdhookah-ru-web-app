@@ -1,7 +1,8 @@
 // @ts-ignore
+import { FunctionComponent } from 'react'
 import { Button1 } from 'src/components/Button1'
 
-export const HowItWorks = () => {
+export const HowItWorks: FunctionComponent = () => {
   return (
     <>
       <section className='how-it-works'>

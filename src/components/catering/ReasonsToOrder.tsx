@@ -1,4 +1,6 @@
-export const ReasonsToOrder = () => {
+import { FunctionComponent } from 'react'
+
+export const ReasonsToOrder: FunctionComponent = () => {
   return (
     <>
       <section className='reasons-to-order'>

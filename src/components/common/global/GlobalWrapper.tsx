@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import { FunctionComponent } from 'react'
-import { GlobalAlertPopup } from 'src/components/common/global/GlobalAlertPopup'
 
 export const GlobalWrapper: FunctionComponent = ({ children }) => {
   return (
@@ -8,8 +7,6 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
       <Head>
         <meta name='viewport' content='width=device-width, initial-scale=1' />
       </Head>
-
-      <GlobalAlertPopup />
 
       {children}
 
@@ -105,7 +102,7 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
             justify-content: center;
             align-items: center;
             color: white;
-            background: #10131b;
+            background: hsl(224, 26%, 8%);
           }
 
           header {
@@ -698,11 +695,6 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
               padding: 10px 15px !important;
             }
 
-            select {
-              width: auto !important;
-              margin: 0 !important;
-            }
-
             .hookah-catering img {
               display: none;
             }
@@ -796,19 +788,19 @@ export const GlobalWrapper: FunctionComponent = ({ children }) => {
 
           div.column767-row768,
           div.column1023-row1024 {
-            display: flex;
-            flex-direction: column;
+            display: flex !important;
+            flex-direction: column !important;
           }
 
           @media screen and (min-width: 768px) {
             div.column767-row768 {
-              flex-direction: row;
+              flex-direction: row !important;
             }
           }
 
           @media screen and (min-width: 1024px) {
             div.column1023-row1024 {
-              flex-direction: row;
+              flex-direction: row !important;
             }
           }
 

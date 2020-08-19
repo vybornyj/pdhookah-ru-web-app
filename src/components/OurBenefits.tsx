@@ -1,4 +1,6 @@
-export const OurBenifits = () => {
+import { FunctionComponent } from 'react'
+
+export const OurBenifits: FunctionComponent = () => {
   return (
     <>
       <section>

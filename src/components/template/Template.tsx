@@ -19,10 +19,10 @@ export const Template: FunctionComponent<Props> = ({ title, description, error, 
       <style jsx global>{
         /* language=CSS */ `
           body {
-            background: #10131b;
+            background: hsl(224, 26%, 8%);
           }
           #__background {
-            background: #10131b;
+            background: hsl(224, 26%, 8%);
           }
         `
       }</style>

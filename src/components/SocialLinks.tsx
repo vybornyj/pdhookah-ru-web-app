@@ -1,4 +1,6 @@
-export const SocialLinks = () => {
+import { FunctionComponent } from 'react'
+
+export const SocialLinks: FunctionComponent = () => {
   return (
     <div className='social-links'>
       <div className='social-item'>

@@ -1,8 +1,8 @@
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 import { ModalInstruction1 } from 'src/components/common/modals/ModalInstruction1'
 import { ModalInstruction2 } from 'src/components/common/modals/ModalInstruction2'
 
-export const Information = () => {
+export const Information: FunctionComponent = () => {
   const [modal1isOpen, setModal1isOpen] = useState(false)
   const [modal2isOpen, setModal2isOpen] = useState(false)
   return (

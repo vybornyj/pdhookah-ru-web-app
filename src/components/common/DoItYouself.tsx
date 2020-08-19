@@ -1,9 +1,9 @@
-import { useState } from 'react'
+import { FunctionComponent, useState } from 'react'
 import { Button1 } from 'src/components/Button1'
 import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 import { ModalInstruction3 } from 'src/components/common/modals/ModalInstruction3'
 
-export const DoItYourself = () => {
+export const DoItYourself: FunctionComponent = () => {
   const [modal3isOpen, setModal3isOpen] = useState(false)
   return (
     <>

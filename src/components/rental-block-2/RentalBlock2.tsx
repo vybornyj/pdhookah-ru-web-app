@@ -54,7 +54,7 @@ export const RentalBlock2: FunctionComponent = () => {
     <>
       <section className='root'>
         <AppModal isOpen={cartIsOpen} closing={() => setCartIsOpen(false)}>
-          <ModalCart cart={cart} addToCart={addToCart} totalPrice={totalPrice} closing={() => setCartIsOpen(false)} />
+          <ModalCart cart={cart} addToCart={addToCart} totalPrice={totalPrice} />
         </AppModal>
         <FixedCartButton totalPrice={totalPrice} onClick={() => setCartIsOpen(true)} />
         <div className='left'>

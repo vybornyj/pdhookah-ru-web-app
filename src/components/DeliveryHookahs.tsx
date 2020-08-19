@@ -1,6 +1,7 @@
+import { FunctionComponent } from 'react'
 import { ButtonFeedback } from 'src/components/common/buttons/ButonFeedback'
 
-export const DeliveryHookahs = () => {
+export const DeliveryHookahs: FunctionComponent = () => {
   return (
     <>
       <section>

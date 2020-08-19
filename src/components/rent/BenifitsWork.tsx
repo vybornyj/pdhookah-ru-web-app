@@ -1,4 +1,6 @@
-export const BenefitsWork = () => {
+import { FunctionComponent } from 'react'
+
+export const BenefitsWork: FunctionComponent = () => {
   return (
     <>
       <section className='reasons-to-order'>
