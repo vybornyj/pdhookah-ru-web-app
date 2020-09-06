@@ -47,7 +47,7 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, 
       <div className={`background ${opened}`} />
       <div className='scrollable' onClick={closing} role='link' tabIndex={0}>
         <div className='close' />
-        <div className={`modal ${opened}`} onClick={event => event.stopPropagation()} role='link' tabIndex={0}>
+        <div className={`modal ${opened}`} onClick={(event) => event.stopPropagation()} role='link' tabIndex={0}>
           {children}
         </div>
       </div>
@@ -69,6 +69,7 @@ export const AppModal: FunctionComponent<Props> = ({ isOpen, closing, children, 
           .AppModal {
             transition: var(--app-transition);
             display: block;
+            color: black;
           }
 
           .AppModal.false {

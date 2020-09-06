@@ -1,6 +1,6 @@
 import { NextPage } from 'next'
-import { PageIndex } from 'src/PageIndex'
+import { Template } from 'src/components/template/Template'
 
-const Page: NextPage = () => <PageIndex />
+const Page: NextPage = () => <Template />
 
 export default Page

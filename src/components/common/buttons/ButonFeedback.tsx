@@ -1,14 +1,14 @@
 import { FunctionComponent, useState } from 'react'
-import { Button1 } from 'src/components/Button1'
+import { AppButton } from 'src/components/common/buttons/AppButton'
 import { ModalFeedback } from 'src/components/common/modals/ModalFeedback'
 
 export const ButtonFeedback: FunctionComponent = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
     <>
-      <ModalFeedback isOpen={modalIsOpen} closing={() => setModalIsOpen(false)} />
-      <Button1 onClick={() => setModalIsOpen(true)}>Заказать обратный звонок</Button1>
+      <ModalFeedback isOpen={isModalOpen} closing={() => setIsModalOpen(false)} />
+      <AppButton onClick={() => setIsModalOpen(true)}>Заказать обратный звонок</AppButton>
     </>
   )
 }

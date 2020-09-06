@@ -14,7 +14,7 @@ export const TemplateHead: FunctionComponent<Props> = ({ title, description }) =
     <Head>
       <title>{title ? `${title} - Подводный Дым` : 'Подводный Дым - Кальяны в Москве'}</title>
       <meta name='description' content={description ?? 'Кальяны в Москве, арендна и доставка, кальянный кейтеринг'} />
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='viewport' content='initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1' />
       <link rel='canonical' href={`/${router.asPath}`} />
     </Head>
   )

@@ -1,5 +1,5 @@
 import { FunctionComponent, useEffect, useState } from 'react'
-import { Button1 } from 'src/components/Button1'
+import { AppButton } from 'src/components/common/buttons/AppButton'
 import { AppModal } from 'src/components/common/modals/AppModal'
 
 interface Props {
@@ -41,7 +41,7 @@ export const ModalFeedback: FunctionComponent<Props> = ({ isOpen, closing }) => 
             <input type='text' placeholder='Ваш телефон' />
             <input type='text' placeholder='Ваш email' />
             <div className='space' />
-            <Button1 onClick={() => handleSubmit()}>Заказать сейчас</Button1>
+            <AppButton onClick={() => handleSubmit()}>Заказать сейчас</AppButton>
           </>
         )}
 
